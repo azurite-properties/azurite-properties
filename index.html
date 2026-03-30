@@ -78,12 +78,15 @@ a{text-decoration:none}
 .btn-white-solid:hover{background:var(--navy);color:var(--white)}
 
 /* scroll reveal */
-.reveal{opacity:0;transform:translateY(36px);transition:opacity .75s ease,transform .75s ease}
-.reveal.in{opacity:1;transform:translateY(0)}
-.reveal-l{opacity:0;transform:translateX(-36px);transition:opacity .75s ease,transform .75s ease}
-.reveal-l.in{opacity:1;transform:translateX(0)}
-.reveal-r{opacity:0;transform:translateX(36px);transition:opacity .75s ease,transform .75s ease}
-.reveal-r.in{opacity:1;transform:translateX(0)}
+.reveal{opacity:1;transform:translateY(0);transition:opacity .75s ease,transform .75s ease}
+.reveal-l{opacity:1;transform:translateX(0);transition:opacity .75s ease,transform .75s ease}
+.reveal-r{opacity:1;transform:translateX(0);transition:opacity .75s ease,transform .75s ease}
+.js-ready .reveal{opacity:0;transform:translateY(36px)}
+.js-ready .reveal.in{opacity:1;transform:translateY(0)}
+.js-ready .reveal-l{opacity:0;transform:translateX(-36px)}
+.js-ready .reveal-l.in{opacity:1;transform:translateX(0)}
+.js-ready .reveal-r{opacity:0;transform:translateX(36px)}
+.js-ready .reveal-r.in{opacity:1;transform:translateX(0)}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}.d6{transition-delay:.6s}
 
 /* ══════════════════════
@@ -1871,7 +1874,7 @@ footer{background:#030C17;padding:4rem 0 2rem;border-top:1px solid rgba(184,146,
             <div class="c-ico">✉️</div>
             <div>
               <div class="c-label">Email</div>
-              <div class="c-val">azuritepropertyltd@gmail.com</div>
+              <div class="c-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1a7b606f68736e7f6a68756a7f686e63766e7e5a7d777b737634797577">[email&#160;protected]</a></div>
             </div>
           </div>
           <div class="c-item">
@@ -2033,24 +2036,34 @@ footer{background:#030C17;padding:4rem 0 2rem;border-top:1px solid rgba(184,146,
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* Nav scroll */
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 70);
 });
 
-/* Scroll reveal */
-const revealEls = document.querySelectorAll('.reveal, .reveal-l, .reveal-r');
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('in');
-      io.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-revealEls.forEach(el => io.observe(el));
+/* Scroll reveal — only animate if JS works fine */
+try {
+  document.documentElement.classList.add('js-ready');
+  const revealEls = document.querySelectorAll('.reveal, .reveal-l, .reveal-r');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+  revealEls.forEach(el => io.observe(el));
+  /* Fallback: if elements not visible after 2s, force show all */
+  setTimeout(() => {
+    revealEls.forEach(el => el.classList.add('in'));
+  }, 2000);
+} catch(e) {
+  /* If anything fails, remove js-ready so content stays visible */
+  document.documentElement.classList.remove('js-ready');
+}
 
 /* Mobile nav */
 function openMobile() { document.getElementById('mobile-nav').classList.add('open'); document.body.style.overflow='hidden'; }
@@ -2061,13 +2074,4 @@ document.querySelectorAll('.pf-btn').forEach(btn => {
   btn.addEventListener('click', function() {
     document.querySelectorAll('.pf-btn').forEach(b => b.classList.remove('active'));
     this.classList.add('active');
-  });
-});
-
-/* Form submit */
-document.getElementById('fsubmit').addEventListener('click', function() {
-  const btn = this;
-  btn.textContent = 'Sending…';
-  btn.style.background = 'var(--teal)';
-  setTimeout(() => {
-    btn.textContent = 'M
+  }

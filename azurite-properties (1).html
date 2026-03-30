@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azurite Properties Ltd — Premium Real Estate on the Kenyan Coast</title>
+<meta name="description" content="Azurite Properties Ltd offers premium property management, sales, rentals, and real estate marketing services across Mombasa and the Kenyan Coast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0B1D35;
+    --navy-mid: #162B4A;
+    --navy-light: #1E3A5F;
+    --gold: #C6983A;
+    --gold-light: #E0B96A;
+    --gold-pale: #F5E6C8;
+    --sand: #D4C4A8;
+    --sand-light: #EDE5D4;
+    --cream: #F9F6F0;
+    --white: #FFFFFF;
+    --teal: #2A6B7C;
+    --teal-light: #3D8A9E;
+    --text-dark: #0B1D35;
+    --text-mid: #3A4A5C;
+    --text-light: #6B7A8D;
+    --border: rgba(198,152,58,0.2);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+    line-height: 1.7;
+  }
+
+  /* ===== TYPOGRAPHY ===== */
+  .display { font-family: 'Cormorant Garamond', serif; }
+  h1,h2,h3,h4 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-height: 1.15; }
+
+  /* ===== UTILITIES ===== */
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  .tag {
+    display: inline-block;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .tag::before { content: '—  '; }
+  .tag::after { content: '  —'; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 2rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--white);
+  }
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--navy);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+    z-index: 0;
+  }
+  .btn-primary span { position: relative; z-index: 1; }
+  .btn-primary:hover::after { transform: scaleX(1); transform-origin: left; }
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.5);
+  }
+  .btn-outline:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: var(--white);
+  }
+  .btn-dark {
+    background: var(--navy);
+    color: var(--white);
+  }
+  .btn-dark:hover { background: var(--navy-mid); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--navy);
+    border: 1px solid var(--navy);
+  }
+  .btn-ghost:hover { background: var(--navy); color: var(--white); }
+
+  /* ===== SCROLLBAR ===== */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--cream); }
+  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+  /* ===== NAVIGATION ===== */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    transition: all 0.4s ease;
+  }
+  nav.scrolled {
+    background: rgba(11,29,53,0.97);
+    backdrop-filter: blur(20px);
+    padding: 1rem 0;
+    box-shadow: 0 1px 40px rgba(0,0,0,0.3);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .logo-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+  .logo-name span { color: var(--gold); }
+  .logo-sub {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--sand);
+    margin-top: 2px;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: width 0.3s;
+  }
+  .nav-links a:hover { color: var(--gold-light); }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-cta { margin-left: 1rem; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 24px; height: 1px; background: white; transition: all 0.3s; }
+
+  /* ===== HERO ===== */
+  #hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, rgba(11,29,53,0.96) 0%, rgba(11,29,53,0.8) 50%, rgba(42,107,124,0.6) 100%);
+    z-index: 1;
+  }
+  .hero-visual {
+    position: absolute;
+    inset: 0;
+    background:
+      url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1800&q=80') center/cover no-repeat;
+    z-index: 0;
+  }
+  .hero-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 60%, rgba(11,29,53,0.8));
+  }
+  .hero-pattern {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 80px,
+      rgba(198,152,58,0.03) 80px,
+      rgba(198,152,58,0.03) 81px
+    );
+  }
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-top: 8rem;
+  }
+  .hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.8s ease both;
+  }
+  .hero-eyebrow-line {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .hero-eyebrow-text {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+  }
+  .hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    color: var(--white);
+    max-width: 820px;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .hero-sub {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.72);
+    max-width: 520px;
+    line-height: 1.75;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    animation: fadeUp 0.8s 0.35s ease both;
+  }
+  .hero-btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.5s ease both;
+  }
+  .hero-stats {
+    margin-top: 5rem;
+    display: flex;
+    gap: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(198,152,58,0.25);
+    animation: fadeUp 0.8s 0.65s ease both;
+  }
+  .hero-stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--gold-light);
+    line-height: 1;
+  }
+  .hero-stat-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-top: 4px;
+  }
+  .hero-scroll {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    animation: fadeIn 1s 1s ease both;
+  }
+  .hero-scroll span {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    animation: scrollPulse 1.5s ease-in-out infinite;
+  }
+
+  /* ===== ABOUT ===== */
+  #about { padding: 7rem 0; background: var(--cream); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+  .about-visual {
+    position: relative;
+  }
+  .about-img-main {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+  }
+  .about-img-main-placeholder {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .about-img-main-placeholder::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80') center/cover;
+    opacity: 0.8;
+  }
+  .about-accent-box {
+    position: absolute;
+    bottom: -2rem;
+    right: -2rem;
+    width: 180px;
+    background: var(--gold);
+    color: var(--white);
+    padding: 1.5rem;
+    z-index: 2;
+  }
+  .about-accent-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .about-accent-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 4px;
+    opacity: 0.9;
+  }
+  .about-border-frame {
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    width: 60%;
+    height: 60%;
+    border: 1px solid var(--gold);
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  .about-text h2 { font-size: clamp(2rem, 3.5vw, 3rem); color: var(--navy); margin-bottom: 1.5rem; }
+  .about-text p { color: var(--text-mid); font-size: 1rem; margin-bottom: 1.2rem; font-weight: 300; }
+  .about-pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .about-pillar {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--sand-light);
+    border-left: 2px solid var(--gold);
+  }
+  .pillar-icon { color: var(--gold); font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+  .pillar-text { font-size: 0.82rem; font-weight: 500; color: var(--navy); letter-spacing: 0.02em; }
+
+  /* ===== SERVICES ===== */
+  #services { padding: 7rem 0; background: var(--navy); position: relative; overflow: hidden; }
+  #services::before {
+    content: 'SERVICES';
+    position: absolute;
+    top: 3rem;
+    right: -2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 10rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.025);
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  .section-header { text-align: center; margin-bottom: 4rem; }
+  .section-header h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
+  .section-header p { font-size: 0.95rem; font-weight: 300; max-width: 520px; margin: 1rem auto 0; }
+  #services .section-header h2 { color: var(--white); }
+  #services .section-header p { color: rgba(255,255,255,0.55); }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(198,152,58,0.15);
+  }
+  .service-card {
+    background: var(--navy);
+    padding: 2.5rem 2rem;
+    border: 1px solid rgba(198,152,58,0.1);
+    transition: all 0.4s ease;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+  .service-card:hover { background: var(--navy-mid); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(198,152,58,0.3);
+    margin-bottom: 1.5rem;
+    color: var(--gold);
+    font-size: 1.2rem;
+    transition: all 0.3s;
+  }
+  .service-card:hover .service-icon { background: var(--gold); color: var(--white); border-color: var(--gold); }
+  .service-card h3 { font-size: 1.25rem; color: var(--white); margin-bottom: 0.75rem; }
+  .service-card p { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.7; font-weight: 300; }
+  .service-num {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(198,152,58,0.08);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  /* ===== WHY CHOOSE US ===== */
+  #why { padding: 7rem 0; background: var(--sand-light); }
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .why-left h2 { font-size: clamp(2rem, 3.5vw, 3rem); color: var(--navy); margin-bottom: 1.5rem; }
+  .why-left p { color: var(--text-mid); font-size: 0.95rem; font-weight: 300; line-height: 1.8; margin-bottom: 2rem; }
+  .why-points {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .why-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(11,29,53,0.1);
+    transition: all 0.3s;
+  }
+  .why-point:hover { padding-left: 0.5rem; }
+  .why-point-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gold);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 2rem;
+  }
+  .why-point-content h4 { font-size: 0.95rem; color: var(--navy); margin-bottom: 0.3rem; font-family: 'Jost', sans-serif; font-weight: 600; }
+  .why-point-content p { font-size: 0.82rem; color: var(--text-light); font-weight: 300; }
+  .why-visual {
+    position: relative;
+    height: 550px;
+  }
+  .why-img {
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
+    position: relative;
+  }
+  .why-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80') center/cover;
+  }
+  .why-badge {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    background: var(--gold);
+    color: var(--white);
+    padding: 2rem 1.5rem;
+    width: 160px;
+    text-align: center;
+  }
+  .why-badge-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .why-badge-text { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.9; margin-top: 4px; }
+
+  /* ===== PROPERTIES ===== */
+  #properties { padding: 7rem 0; background: var(--cream); }
+  #properties .section-header h2 { color: var(--navy); }
+  #properties .section-header p { color: var(--text-mid); }
+  .properties-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .property-card {
+    background: var(--white);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(198,152,58,0.1);
+  }
+  .property-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(11,29,53,0.12); }
+  .property-img {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+  }
+  .property-img-inner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+  }
+  .property-card:hover .property-img-inner { transform: scale(1.05); }
+  .property-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+  }
+  .property-body { padding: 1.5rem; }
+  .property-location {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--teal);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .property-body h3 { font-size: 1.15rem; color: var(--navy); margin-bottom: 0.5rem; }
+  .property-desc { font-size: 0.82rem; color: var(--text-light); font-weight: 300; margin-bottom: 1rem; line-height: 1.6; }
+  .property-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid var(--sand-light);
+  }
+  .property-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .property-price small { font-size: 0.65rem; font-family: 'Jost', sans-serif; color: var(--text-light); font-weight: 400; display: block; margin-top: -2px; }
+  .property-link {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: gap 0.3s;
+  }
+  .property-link:hover { gap: 0.6rem; }
+  .properties-cta { text-align: center; margin-top: 3rem; }
+
+  /* ===== LIFESTYLE ===== */
+  #lifestyle {
+    padding: 7rem 0;
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+  }
+  .lifestyle-bg {
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1800&q=80') center/cover no-repeat;
+    opacity: 0.08;
+  }
+  .lifestyle-inner {
+    position: relative;
+    z-index: 1;
+  }
+  .lifestyle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .lifestyle-text h2 { font-size: clamp(2rem, 4vw, 3.5rem); color: var(--white); margin-bottom: 1.5rem; }
+  .lifestyle-text h2 em { color: var(--gold-light); font-style: italic; }
+  .lifestyle-text p { color: rgba(255,255,255,0.6); font-size: 0.95rem; font-weight: 300; line-height: 1.85; margin-bottom: 1.2rem; }
+  .lifestyle-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .lifestyle-feat {
+    padding: 1.5rem;
+    border: 1px solid rgba(198,152,58,0.2);
+    transition: border-color 0.3s;
+  }
+  .lifestyle-feat:hover { border-color: rgba(198,152,58,0.5); }
+  .lifestyle-feat-icon { font-size: 1.3rem; margin-bottom: 0.75rem; }
+  .lifestyle-feat h4 { font-size: 0.88rem; font-family: 'Jost', sans-serif; font-weight: 600; color: var(--gold-light); margin-bottom: 0.3rem; letter-spacing: 0.05em; }
+  .lifestyle-feat p { font-size: 0.78rem; color: rgba(255,255,255,0.45); font-weight: 300; }
+  .lifestyle-visual {
+    position: relative;
+  }
+  .lifestyle-img-stack {
+    position: relative;
+    height: 500px;
+  }
+  .lifestyle-img-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 70%;
+    background: url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80') center/cover;
+  }
+  .lifestyle-img-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 65%;
+    height: 60%;
+    background: url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80') center/cover;
+    border: 3px solid var(--navy);
+  }
+  .lifestyle-quote {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    background: var(--gold);
+    color: var(--white);
+    padding: 1.25rem 1.5rem;
+    max-width: 220px;
+    z-index: 2;
+  }
+  .lifestyle-quote p { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; line-height: 1.4; color: var(--white); margin: 0; }
+
+  /* ===== TESTIMONIALS ===== */
+  #testimonials { padding: 7rem 0; background: var(--cream); }
+  #testimonials .section-header h2 { color: var(--navy); }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .testimonial-card {
+    padding: 2rem;
+    background: var(--white);
+    border: 1px solid rgba(198,152,58,0.12);
+    position: relative;
+    transition: all 0.3s;
+  }
+  .testimonial-card::before {
+    content: '\201C';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    color: var(--gold);
+    opacity: 0.15;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    line-height: 1;
+  }
+  .testimonial-card:hover { transform: translateY(-4px); box-shadow: 0 15px 50px rgba(11,29,53,0.08); }
+  .testimonial-stars { color: var(--gold); font-size: 0.75rem; letter-spacing: 0.1em; margin-bottom: 1rem; }
+  .testimonial-text {
+    font-size: 0.88rem;
+    color: var(--text-mid);
+    line-height: 1.8;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+  }
+  .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+  .testimonial-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+  .testimonial-name { font-size: 0.85rem; font-weight: 600; color: var(--navy); }
+  .testimonial-role { font-size: 0.72rem; color: var(--text-light); }
+
+  /* ===== CTA SECTION ===== */
+  #cta { padding: 6rem 0; background: var(--gold); position: relative; overflow: hidden; }
+  #cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80') center/cover no-repeat;
+    opacity: 0.1;
+  }
+  #cta::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    pointer-events: none;
+  }
+  .cta-inner { position: relative; z-index: 1; text-align: center; }
+  .cta-inner .tag { color: rgba(255,255,255,0.8); }
+  .cta-inner h2 { font-size: clamp(2rem, 4vw, 3.5rem); color: var(--white); margin-bottom: 1rem; }
+  .cta-inner p { color: rgba(255,255,255,0.8); font-size: 1rem; font-weight: 300; max-width: 500px; margin: 0 auto 2.5rem; }
+  .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn-white { background: var(--white); color: var(--gold); font-weight: 600; }
+  .btn-white:hover { background: var(--navy); color: var(--white); }
+  .btn-outline-white { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.6); }
+  .btn-outline-white:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
+
+  /* ===== CONTACT ===== */
+  #contact { padding: 7rem 0; background: var(--navy); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 5rem;
+    align-items: start;
+  }
+  .contact-info h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); color: var(--white); margin-bottom: 1.5rem; }
+  .contact-info p { color: rgba(255,255,255,0.55); font-size: 0.9rem; font-weight: 300; line-height: 1.8; margin-bottom: 2rem; }
+  .contact-items { display: flex; flex-direction: column; gap: 1.25rem; }
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(198,152,58,0.15);
+    transition: border-color 0.3s;
+  }
+  .contact-item:hover { border-color: rgba(198,152,58,0.4); }
+  .contact-item-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(198,152,58,0.1);
+    color: var(--gold);
+    flex-shrink: 0;
+    font-size: 0.9rem;
+  }
+  .contact-item-label { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+  .contact-item-value { font-size: 0.88rem; color: rgba(255,255,255,0.75); margin-top: 2px; }
+  .contact-socials {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+  .social-btn {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(198,152,58,0.25);
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+  }
+  .social-btn:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
+  .contact-form { background: rgba(255,255,255,0.04); border: 1px solid rgba(198,152,58,0.15); padding: 2.5rem; }
+  .contact-form h3 { font-size: 1.4rem; color: var(--white); margin-bottom: 1.5rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+  .form-group label { font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.4); font-weight: 600; }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(198,152,58,0.2);
+    color: var(--white);
+    padding: 0.85rem 1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.88rem;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--gold); }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: rgba(255,255,255,0.25); }
+  .form-group select option { background: var(--navy); color: var(--white); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit { width: 100%; padding: 1rem; background: var(--gold); color: var(--white); border: none; font-family: 'Jost', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; transition: background 0.3s; }
+  .form-submit:hover { background: var(--gold-light); }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: #060F1C;
+    padding: 4rem 0 2rem;
+    border-top: 1px solid rgba(198,152,58,0.15);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-brand p { font-size: 0.82rem; color: rgba(255,255,255,0.4); font-weight: 300; line-height: 1.75; margin-top: 1rem; max-width: 280px; }
+  .footer-col h4 { font-family: 'Jost', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-col ul li a { text-decoration: none; color: rgba(255,255,255,0.4); font-size: 0.82rem; font-weight: 300; transition: color 0.3s; }
+  .footer-col ul li a:hover { color: var(--gold-light); }
+  .footer-bottom {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-bottom p { font-size: 0.75rem; color: rgba(255,255,255,0.25); }
+  .footer-bottom a { color: var(--gold); text-decoration: none; }
+
+  /* ===== WHATSAPP FLOAT ===== */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    text-decoration: none;
+    transition: all 0.3s;
+    animation: pulse 2s infinite;
+  }
+  .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.5); }
+  .whatsapp-float svg { width: 26px; height: 26px; fill: white; }
+
+  /* ===== ANIMATIONS ===== */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 1; transform: scaleY(1); }
+    50% { opacity: 0.3; transform: scaleY(0.8); }
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 4px 30px rgba(37,211,102,0.7); }
+  }
+
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== MOBILE ===== */
+  @media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .about-visual { order: -1; }
+    .why-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .why-visual { order: -1; height: 350px; }
+    .lifestyle-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .lifestyle-img-stack { height: 350px; }
+    .properties-grid { grid-template-columns: 1fr 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  }
+  @media (max-width: 768px) {
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+    .services-grid { grid-template-columns: 1fr; }
+    .properties-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .about-pillars { grid-template-columns: 1fr; }
+    .lifestyle-features { grid-template-columns: 1fr; }
+    .lifestyle-img-stack { display: none; }
+    .cta-btns { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-name">Azurite <span>Properties</span></div>
+        <div class="logo-sub">Ltd · Mombasa, Kenya</div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#lifestyle">Coastal Living</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta"><span>Book Consultation</span></a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-visual"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <div class="hero-eyebrow-text">Mombasa · Kenya Coast · Est. 2018</div>
+    </div>
+    <h1>Premium Real Estate<br>Solutions on the<br><em>Kenyan Coast</em></h1>
+    <p class="hero-sub">Azurite Properties Ltd specialises in professional property management, strategic real estate sales, premium rentals, and expert real estate marketing across Mombasa and the wider Coast region.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary"><span>Book a Consultation</span></a>
+      <a href="#properties" class="btn btn-outline">View Properties</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">200+</div>
+        <div class="hero-stat-label">Properties Managed</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">6+</div>
+        <div class="hero-stat-label">Years of Expertise</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">98%</div>
+        <div class="hero-stat-label">Client Satisfaction</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">12+</div>
+        <div class="hero-stat-label">Coastal Locations</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual fade-in-up">
+        <div class="about-border-frame"></div>
+        <div class="about-img-main-placeholder"></div>
+        <div class="about-accent-box">
+          <div class="about-accent-num">6+</div>
+          <div class="about-accent-label">Years of Coastal Expertise</div>
+        </div>
+      </div>
+      <div class="about-text fade-in-up">
+        <span class="tag">About Us</span>
+        <h2>Where Property Value Meets Professional Care</h2>
+        <p>Azurite Properties Ltd is a trusted Kenyan real estate company rooted in the heart of Mombasa. We have built our reputation on a foundation of professionalism, integrity, and an intimate knowledge of the Coast's dynamic property landscape.</p>
+        <p>We understand that real estate is more than bricks and mortar — it is an investment in lifestyle, security, and legacy. Whether you are a property owner seeking expert management, a buyer exploring coastal opportunities, or a developer requiring a credible marketing partner, we are the team that delivers.</p>
+        <p>Our client-centered approach, combined with deep local market intelligence, positions Azurite Properties as the preferred partner for discerning investors and homeowners across the Kenya Coast.</p>
+        <div class="about-pillars">
+          <div class="about-pillar">
+            <div class="pillar-icon">✦</div>
+            <div class="pillar-text">Integrity & Transparency</div>
+          </div>
+          <div class="about-pillar">
+            <div class="pillar-icon">✦</div>
+            <div class="pillar-text">Local Market Mastery</div>
+          </div>
+          <div class="about-pillar">
+            <div class="pillar-icon">✦</div>
+            <div class="pillar-text">Client-Centered Service</div>
+          </div>
+          <div class="about-pillar">
+            <div class="pillar-icon">✦</div>
+            <div class="pillar-text">Investment Excellence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="tag" style="color:var(--gold);">What We Offer</span>
+      <h2>Comprehensive Real Estate Services</h2>
+      <p>From acquisition to management, we provide the full spectrum of professional real estate solutions tailored to the Kenyan Coast.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in-up">
+        <div class="service-num">01</div>
+        <div class="service-icon">🏢</div>
+        <h3>Property Management</h3>
+        <p>End-to-end management of residential and commercial properties. We handle tenant relations, maintenance, rent collection, and compliance — so your investment performs at its best, always.</p>
+      </div>
+      <div class="service-card fade-in-up">
+        <div class="service-num">02</div>
+        <div class="service-icon">🏠</div>
+        <h3>Property Sales</h3>
+        <p>Strategic property sales executed with precision. We connect motivated sellers with qualified buyers through professional valuations, targeted marketing, and seamless transaction management.</p>
+      </div>
+      <div class="service-card fade-in-up">
+        <div class="service-num">03</div>
+        <div class="service-icon">🔑</div>
+        <h3>Rental Services</h3>
+        <p>Premium rental solutions for both landlords and tenants. We match quality properties with the right occupants through thorough vetting, market-rate pricing, and professional tenancy agreements.</p>
+      </div>
+      <div class="service-card fade-in-up">
+        <div class="service-num">04</div>
+        <div class="service-icon">📊</div>
+        <h3>Real Estate Marketing</h3>
+        <p>Elevate your property's visibility with our professional marketing services. From photography and digital campaigns to listing management, we ensure your property commands the attention it deserves.</p>
+      </div>
+      <div class="service-card fade-in-up">
+        <div class="service-num">05</div>
+        <div class="service-icon">🏗️</div>
+        <h3>Developer Support</h3>
+        <p>A strategic partner for developers at every phase. From project branding and sales strategy to buyer pipeline management, we help you bring coastal development projects to market with confidence.</p>
+      </div>
+      <div class="service-card fade-in-up" style="background:rgba(198,152,58,0.08);">
+        <div class="service-num" style="color:rgba(198,152,58,0.2);">✦</div>
+        <div style="padding-top:2rem;">
+          <h3 style="color:var(--gold-light); font-size:1.5rem;">Ready to get started?</h3>
+          <p style="color:rgba(255,255,255,0.5); margin-bottom:2rem;">Speak with our team about your property goals and how we can serve you best.</p>
+          <a href="#contact" class="btn btn-primary"><span>Get In Touch</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="fade-in-up">
+        <span class="tag">Why Azurite</span>
+        <h2>The Standard for Coastal Real Estate Excellence</h2>
+        <p>We have spent years studying every corner of the Mombasa and Coast property market. That depth of knowledge — combined with our professional systems and unwavering commitment to clients — is what sets Azurite apart.</p>
+        <div class="why-points">
+          <div class="why-point">
+            <div class="why-point-num">01</div>
+            <div class="why-point-content">
+              <h4>Deep Coastal Market Knowledge</h4>
+              <p>We understand Mombasa's neighbourhoods, price dynamics, and investment potential like no other agency.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-point-num">02</div>
+            <div class="why-point-content">
+              <h4>Professional Management Systems</h4>
+              <p>Structured, technology-driven management processes that protect your property and maximise returns.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-point-num">03</div>
+            <div class="why-point-content">
+              <h4>Premium Client Service</h4>
+              <p>Responsive, discreet, and attentive — we treat every client relationship with the care it deserves.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-point-num">04</div>
+            <div class="why-point-content">
+              <h4>Transparent Communication</h4>
+              <p>Clear reporting, honest pricing, and no hidden fees. We believe trust is the foundation of every great partnership.</p>
+            </div>
+          </div>
+          <div class="why-point">
+            <div class="why-point-num">05</div>
+            <div class="why-point-content">
+              <h4>Strong Visibility & Marketing</h4>
+              <p>Your property receives maximum exposure through our professional marketing channels and established networks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual fade-in-up">
+        <div class="why-img"></div>
+        <div class="why-badge">
+          <div class="why-badge-num">200+</div>
+          <div class="why-badge-text">Properties Under Management</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROPERTIES -->
+<section id="properties">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="tag">Featured Listings</span>
+      <h2>Premium Coastal Properties</h2>
+      <p>Explore a curated selection of our featured properties across Mombasa's most sought-after locations.</p>
+    </div>
+    <div class="properties-grid">
+      <div class="property-card fade-in-up">
+        <div class="property-img">
+          <div class="property-img-inner" style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80')"></div>
+          <div class="property-badge">For Sale</div>
+        </div>
+        <div class="property-body">
+          <div class="property-location">📍 Nyali, Mombasa</div>
+          <h3>Luxury 3-Bedroom Apartment</h3>
+          <p class="property-desc">Elegantly finished apartment with ocean views, modern kitchen, secure parking, and access to a community pool in the heart of Nyali.</p>
+          <div class="property-footer">
+            <div class="property-price">
+              KES 18.5M
+              <small>Freehold Title</small>
+            </div>
+            <a href="#contact" class="property-link">Enquire →</a>
+          </div>
+        </div>
+      </div>
+      <div class="property-card fade-in-up">
+        <div class="property-img">
+          <div class="property-img-inner" style="background-image:url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600&q=80')"></div>
+          <div class="property-badge">For Rent</div>
+        </div>
+        <div class="property-body">
+          <div class="property-location">📍 Kizingo, Mombasa Island</div>
+          <h3>Executive 4-Bedroom Villa</h3>
+          <p class="property-desc">A prestigious colonial-style villa in one of Mombasa's most exclusive neighbourhoods, featuring expansive grounds and premium finishes.</p>
+          <div class="property-footer">
+            <div class="property-price">
+              KES 180K
+              <small>Per Month</small>
+            </div>
+            <a href="#contact" class="property-link">Enquire →</a>
+          </div>
+        </div>
+      </div>
+      <div class="property-card fade-in-up">
+        <div class="property-img">
+          <div class="property-img-inner" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80')"></div>
+          <div class="property-badge">For Sale</div>
+        </div>
+        <div class="property-body">
+          <div class="property-location">📍 Tudor, Mombasa</div>
+          <h3>Modern 2-Bedroom Apartment</h3>
+          <p class="property-desc">Stylish contemporary apartment with open-plan living, fitted kitchen, balcony with creek views, and 24-hour security in Tudor Creekside.</p>
+          <div class="property-footer">
+            <div class="property-price">
+              KES 9.8M
+              <small>Freehold Title</small>
+            </div>
+            <a href="#contact" class="property-link">Enquire →</a>
+          </div>
+        </div>
+      </div>
+      <div class="property-card fade-in-up">
+        <div class="property-img">
+          <div class="property-img-inner" style="background-image:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80')"></div>
+          <div class="property-badge">Investment</div>
+        </div>
+        <div class="property-body">
+          <div class="property-location">📍 Bamburi, Mombasa North</div>
+          <h3>Commercial Plot — Prime Location</h3>
+          <p class="property-desc">A strategic commercial plot along the Malindi Highway corridor, ideal for mixed-use development with high-visibility frontage and excellent access.</p>
+          <div class="property-footer">
+            <div class="property-price">
+              KES 45M
+              <small>Freehold · Negotiable</small>
+            </div>
+            <a href="#contact" class="property-link">Enquire →</a>
+          </div>
+        </div>
+      </div>
+      <div class="property-card fade-in-up">
+        <div class="property-img">
+          <div class="property-img-inner" style="background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80')"></div>
+          <div class="property-badge">For Rent</div>
+        </div>
+        <div class="property-body">
+          <div class="property-location">📍 Shanzu, Mombasa</div>
+          <h3>Beachfront Studio Apartment</h3>
+          <p class="property-desc">A premium serviced studio steps from the ocean, tastefully furnished and perfect for professionals, expats, or short-stay rental returns.</p>
+          <div class="property-footer">
+            <div class="property-price">
+              KES 55K
+              <small>Per Month</small>
+            </div>
+            <a href="#contact" class="property-link">Enquire →</a>
+          </div>
+        </div>
+      </div>
+      <div class="property-card fade-in-up">
+        <div class="property-img">
+          <div class="property-img-inner" style="background-image:url('https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=600&q=80')"></div>
+          <div class="property-badge">New Launch</div>
+        </div>
+        <div class="property-body">
+          <div class="property-location">📍 Likoni, South Coast</div>
+          <h3>Off-Plan Apartment Development</h3>
+          <p class="property-desc">Off-plan opportunity in a premium residential development on Mombasa's South Coast. Flexible payment plans and strong projected capital growth.</p>
+          <div class="property-footer">
+            <div class="property-price">
+              From KES 6.5M
+              <small>Flexible Plans Available</small>
+            </div>
+            <a href="#contact" class="property-link">Enquire →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="properties-cta fade-in-up">
+      <a href="#contact" class="btn btn-dark">View All Properties &nbsp;→</a>
+    </div>
+  </div>
+</section>
+
+<!-- COASTAL LIFESTYLE -->
+<section id="lifestyle">
+  <div class="lifestyle-bg"></div>
+  <div class="lifestyle-inner">
+    <div class="container">
+      <div class="lifestyle-grid">
+        <div class="lifestyle-text fade-in-up">
+          <span class="tag">The Coastal Advantage</span>
+          <h2>Invest in the <em>Dream</em><br>of the Kenyan Coast</h2>
+          <p>Mombasa is not merely a city — it is one of East Africa's most compelling investment destinations and one of its most enviable places to call home. The Coast offers an unmatched blend of ocean-adjacent luxury, cultural richness, and strong property market fundamentals.</p>
+          <p>From the pristine shores of Diani and Shanzu to the commercial energy of Mombasa Island, coastal property remains a strategic asset class with consistent demand, strong rental yields, and long-term capital appreciation potential.</p>
+          <div class="lifestyle-features">
+            <div class="lifestyle-feat">
+              <div class="lifestyle-feat-icon">🌊</div>
+              <h4>Ocean-Adjacent Living</h4>
+              <p>Premium beachfront and ocean-view properties in one of Africa's most beautiful coastlines.</p>
+            </div>
+            <div class="lifestyle-feat">
+              <div class="lifestyle-feat-icon">📈</div>
+              <h4>Strong Investment Returns</h4>
+              <p>Consistent rental yields and capital appreciation in a high-demand property market.</p>
+            </div>
+            <div class="lifestyle-feat">
+              <div class="lifestyle-feat-icon">✈️</div>
+              <h4>Infrastructure Growth</h4>
+              <p>Major infrastructure projects are driving demand and property values across the Coast region.</p>
+            </div>
+            <div class="lifestyle-feat">
+              <div class="lifestyle-feat-icon">🌟</div>
+              <h4>Exclusive Lifestyle</h4>
+              <p>World-class hospitality, dining, and amenities create premium lifestyle value year-round.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lifestyle-visual fade-in-up">
+          <div class="lifestyle-img-stack">
+            <div class="lifestyle-img-1"></div>
+            <div class="lifestyle-img-2"></div>
+            <div class="lifestyle-quote">
+              <p>"The Coast is not just where you live — it's how you live."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="tag">Client Voices</span>
+      <h2>What Our Clients Say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in-up">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Azurite Properties transformed my experience as a property owner. Their management team is thorough, professional, and genuinely invested in maximising the value of my investment. I now have complete peace of mind."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JK</div>
+          <div>
+            <div class="testimonial-name">James Kariuki</div>
+            <div class="testimonial-role">Property Owner · Nyali</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in-up">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Finding the right home in Mombasa felt overwhelming until we engaged Azurite. Their knowledge of the market is exceptional. We found our ideal apartment in Tudor within two weeks and the process was seamless."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SA</div>
+          <div>
+            <div class="testimonial-name">Sophia Andersen</div>
+            <div class="testimonial-role">Tenant · Tudor Creekside</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in-up">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"As a developer, I needed a real estate marketing partner who truly understood the Coast market. Azurite delivered outstanding results — professional presentation, strong buyer pipeline, and exceptional communication throughout."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">HM</div>
+          <div>
+            <div class="testimonial-name">Hassan Mohamed</div>
+            <div class="testimonial-role">Property Developer · South Coast</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner fade-in-up">
+      <span class="tag">Take the Next Step</span>
+      <h2>Let's Grow Your Property<br>Portfolio Together</h2>
+      <p>Whether you're ready to list your property, explore an investment opportunity, or simply want expert coastal real estate advice — the Azurite team is here for you.</p>
+      <div class="cta-btns">
+        <a href="#contact" class="btn btn-white"><span>List Your Property</span></a>
+        <a href="#contact" class="btn btn-outline-white">Book a Viewing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="fade-in-up">
+        <span class="tag" style="color:var(--gold);">Get In Touch</span>
+        <h2>Speak With Our<br>Expert Team</h2>
+        <p>Our team of real estate professionals is ready to assist you. Reach out through any of our contact channels and we will respond promptly.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value">+254 700 000 000</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">info@azuriteproperties.co.ke</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <div class="contact-item-label">Office</div>
+              <div class="contact-item-value">Nyali Centre, Links Road, Mombasa, Kenya</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">💬</div>
+            <div>
+              <div class="contact-item-label">WhatsApp</div>
+              <div class="contact-item-value">+254 700 000 000 · Available Mon–Sat</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="#" class="social-btn" title="Facebook">f</a>
+          <a href="#" class="social-btn" title="Instagram">in</a>
+          <a href="#" class="social-btn" title="LinkedIn">lk</a>
+          <a href="#" class="social-btn" title="Twitter / X">𝕏</a>
+        </div>
+      </div>
+      <div class="contact-form fade-in-up">
+        <h3>Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="John">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+254 7XX XXX XXX">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>I Am Interested In</label>
+          <select>
+            <option value="">Select an option</option>
+            <option>Property Management Services</option>
+            <option>Buying a Property</option>
+            <option>Renting a Property</option>
+            <option>Listing My Property for Sale</option>
+            <option>Real Estate Marketing</option>
+            <option>Developer / Project Partnership</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us more about your property needs..."></textarea>
+        </div>
+        <button type="button" class="form-submit">Send Message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-name">Azurite <span>Properties</span></div>
+          <div class="logo-sub" style="color:rgba(255,255,255,0.3);">Ltd · Mombasa, Kenya</div>
+        </a>
+        <p>Premium real estate solutions across Mombasa and the wider Kenya Coast. Trusted by property owners, investors, tenants, and developers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Property Management</a></li>
+          <li><a href="#services">Property Sales</a></li>
+          <li><a href="#services">Rental Services</a></li>
+          <li><a href="#services">Real Estate Marketing</a></li>
+          <li><a href="#services">Developer Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <ul>
+          <li><a href="#">Nyali</a></li>
+          <li><a href="#">Kizingo</a></li>
+          <li><a href="#">Tudor</a></li>
+          <li><a href="#">Bamburi</a></li>
+          <li><a href="#">Shanzu & South Coast</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Client Stories</a></li>
+          <li><a href="#properties">Featured Properties</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Azurite Properties Ltd. All rights reserved. Registered in Kenya.</p>
+      <p>Built with care for the <a href="#">Kenyan Coast</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/254700000000?text=Hello%2C%20I%20am%20interested%20in%20your%20real%20estate%20services." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<script>
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Intersection Observer for animations
+  const fadeEls = document.querySelectorAll('.fade-in-up');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  fadeEls.forEach(el => observer.observe(el));
+
+  // Menu toggle (mobile)
+  function toggleMenu() {
+    const links = document.querySelector('.nav-links');
+    if (links) {
+      const isOpen = links.style.display === 'flex';
+      links.style.cssText = isOpen ? '' : `
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(11,29,53,0.98);
+        padding: 2rem;
+        gap: 1.5rem;
+        z-index: 999;
+        backdrop-filter: blur(20px);
+      `;
+    }
+  }
+
+  // Smooth form submit
+  document.querySelector('.form-submit').addEventListener('click', function() {
+    this.textContent = 'Message Sent ✓';
+    this.style.background = '#2A6B7C';
+    setTimeout(() => {
+      this.textContent = 'Send Message';
+      this.style.background = '';
+    }, 3000);
+  });
+</script>
+</body>
+</html>

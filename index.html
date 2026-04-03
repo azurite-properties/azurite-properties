@@ -1719,7 +1719,14 @@ a:focus-visible, button:focus-visible {
             <div class="c-ico" aria-hidden="true">✉️</div>
             <div>
               <div class="c-label">Email</div>
-              <div class="c-val"><a href="mailto:azuritepropertyltd@gmail.com">azuritepropertyltd@gmail.com</a></div>
+              <div class="c-val"><a href="mailto:info@azuriteproperties.co.ke">info@azuriteproperties.co.ke</a></div>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-ico" aria-hidden="true">📧</div>
+            <div>
+              <div class="c-label">Sales &amp; Rentals</div>
+              <div class="c-val"><a href="mailto:sales@azuriteproperties.co.ke">sales@azuriteproperties.co.ke</a></div>
             </div>
           </div>
           <div class="c-item">
@@ -1742,11 +1749,10 @@ a:focus-visible, button:focus-visible {
           Chat on WhatsApp
         </a>
         <div class="socials" aria-label="Social media links">
-          <!-- Update these hrefs with actual social media profile URLs -->
-          <a href="#" class="soc" aria-label="Facebook (coming soon)">f</a>
-          <a href="#" class="soc" aria-label="Instagram (coming soon)">in</a>
-          <a href="#" class="soc" aria-label="LinkedIn (coming soon)">lk</a>
-          <a href="#" class="soc" aria-label="X / Twitter (coming soon)">𝕏</a>
+          <a href="https://facebook.com/azuriteproperties" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Azurite Properties on Facebook">f</a>
+          <a href="https://instagram.com/azuriteproperties" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Azurite Properties on Instagram">ig</a>
+          <a href="https://tiktok.com/@azurite.property" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Azurite Properties on TikTok">tt</a>
+          <a href="https://x.com/Azurite_Ltd" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Azurite Properties on X / Twitter">𝕏</a>
         </div>
       </div>
 
@@ -1757,7 +1763,7 @@ a:focus-visible, button:focus-visible {
       -->
       <div class="c-form">
         <h3>Send Us a Message</h3>
-        <form id="contact-form" action="mailto:azuritepropertyltd@gmail.com" method="GET" enctype="text/plain" novalidate>
+        <form id="contact-form" action="mailto:info@azuriteproperties.co.ke" method="GET" enctype="text/plain" novalidate>
           <div class="f-row">
             <div class="f-group">
               <label for="fname">First Name <span aria-hidden="true">*</span></label>
@@ -1846,9 +1852,15 @@ a:focus-visible, button:focus-visible {
         </div>
         <p>Real estate services across Mombasa and the Kenya Coast — property management, sales, lettings, and developer support.</p>
         <p style="margin-top:.6rem;font-size:.72rem;color:rgba(255,255,255,.22)">
-          <a href="mailto:azuritepropertyltd@gmail.com" style="color:rgba(255,255,255,.3)">azuritepropertyltd@gmail.com</a><br>
+          <a href="mailto:info@azuriteproperties.co.ke" style="color:rgba(255,255,255,.3)">info@azuriteproperties.co.ke</a><br>
           <a href="tel:+254117000666" style="color:rgba(255,255,255,.3)">+254 117 000 666</a>
         </p>
+        <div style="display:flex;gap:.5rem;margin-top:1rem">
+          <a href="https://facebook.com/azuriteproperties" target="_blank" rel="noopener noreferrer" style="width:30px;height:30px;border:1px solid rgba(184,146,46,.2);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:rgba(255,255,255,.35);transition:all .25s" aria-label="Facebook">f</a>
+          <a href="https://instagram.com/azuriteproperties" target="_blank" rel="noopener noreferrer" style="width:30px;height:30px;border:1px solid rgba(184,146,46,.2);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:rgba(255,255,255,.35);transition:all .25s" aria-label="Instagram">ig</a>
+          <a href="https://tiktok.com/@azurite.property" target="_blank" rel="noopener noreferrer" style="width:30px;height:30px;border:1px solid rgba(184,146,46,.2);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:rgba(255,255,255,.35);transition:all .25s" aria-label="TikTok">tt</a>
+          <a href="https://x.com/Azurite_Ltd" target="_blank" rel="noopener noreferrer" style="width:30px;height:30px;border:1px solid rgba(184,146,46,.2);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:rgba(255,255,255,.35);transition:all .25s" aria-label="X / Twitter">𝕏</a>
+        </div>
       </div>
       <div class="ft-col">
         <h4>Services</h4>
@@ -1962,20 +1974,3 @@ if (form) {
       alert('Please fill in your name, email address, and message before sending.');
       return;
     }
-
-    btn.textContent = 'Opening email client…';
-    btn.disabled = true;
-
-    /* Note: this form uses mailto: as a fallback.
-       For full web-based submission without opening an email client,
-       sign up at formspree.io and replace the form action attribute. */
-
-    setTimeout(function() {
-      btn.textContent = 'Send Message';
-      btn.disabled = false;
-    }, 3000);
-  });
-}
-</script>
-</body>
-</html>

@@ -176,26 +176,37 @@ h1, h2, h3 { font-family: var(--ff-serif); line-height: 1.15; }
 ═══════════════════════════ */
 #nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 900;
-  padding: 1.4rem 0; transition: all .35s ease;
+  padding: 1rem 0; transition: all .35s ease;
+  background: rgba(10,25,41,.15);
+  backdrop-filter: blur(8px);
 }
 #nav.scrolled {
   background: rgba(10,25,41,.97);
   backdrop-filter: blur(20px);
-  padding: .9rem 0;
+  padding: .7rem 0;
   box-shadow: 0 2px 40px rgba(0,0,0,.35);
 }
 .nav-wrap {
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;
 }
-.logo { display: flex; flex-direction: column; line-height: 1; }
-.logo-mark {
-  font-family: var(--ff-serif); font-size: 1.35rem; font-weight: 700;
-  color: var(--white); letter-spacing: .04em;
+.logo {
+  display: flex; align-items: center; line-height: 1;
+  text-decoration: none;
 }
-.logo-mark span { color: var(--gold-lt); }
-.logo-sub {
-  font-size: .5rem; font-weight: 500; letter-spacing: .26em;
-  text-transform: uppercase; color: rgba(255,255,255,.32); margin-top: 3px;
+.logo img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,.4));
+  transition: height .35s ease;
+}
+#nav.scrolled .logo img {
+  height: 52px;
+}
+@media (max-width: 768px) {
+  .logo img { height: 48px; }
+  #nav.scrolled .logo img { height: 42px; }
 }
 .nav-links {
   display: flex; align-items: center; gap: 1.75rem;
@@ -1888,7 +1899,7 @@ a:focus-visible, button:focus-visible {
     <div class="footer-grid">
       <div class="ft-brand">
         <div class="logo" aria-label="Azurite Properties Ltd">
-          <img src="logo.jpeg" alt="Azurite Properties Ltd" style="height:55px;width:auto;display:block;object-fit:contain;filter:brightness(1.1);">
+          <img src="logo.jpeg" alt="Azurite Properties Ltd" style="height:80px;width:auto;display:block;object-fit:contain;margin-bottom:.5rem;">
         </div>
         <p>Real estate services across Mombasa and the Kenya Coast — property management, sales, lettings, and developer support.</p>
         <p style="margin-top:.6rem;font-size:.72rem;color:rgba(255,255,255,.22)">

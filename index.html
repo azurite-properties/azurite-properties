@@ -1118,7 +1118,7 @@ a:focus-visible, button:focus-visible {
           KES 24.5M
           <small>Freehold · 1,950 sq ft · Sea Views</small>
         </div>
-        <a href="#contact" class="hero-card-cta">Enquire About This Property</a>
+        <a href="properties/azure-heights-nyali/" class="hero-card-cta">View Property Details</a>
       </div>
     </div>
     <div class="hero-stats" aria-label="Company figures">
@@ -1267,10 +1267,11 @@ a:focus-visible, button:focus-visible {
 
     <div class="prop-filters" role="group" aria-label="Filter properties by status">
       <button class="pf active" data-filter="all">All</button>
+      <button class="pf" data-filter="offplan">Off-Plan</button>
       <button class="pf" data-filter="sale">For Sale</button>
       <button class="pf" data-filter="rent">For Rent</button>
-      <button class="pf" data-filter="offplan">Off-Plan</button>
       <button class="pf" data-filter="invest">Investment</button>
+      <button class="pf" data-filter="holiday">Holiday Stays</button>
     </div>
 
     <div class="prop-grid" role="list">
@@ -1391,7 +1392,7 @@ a:focus-visible, button:focus-visible {
         </div>
       </article>
 
-      <article class="prop-card" role="listitem" data-status="rent">
+      <article class="prop-card" role="listitem" data-status="holiday">
         <div class="prop-img" aria-hidden="true">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&q=80')"></div>
           <div class="prop-tag tag-holiday">Holiday Let</div>
@@ -1457,7 +1458,7 @@ a:focus-visible, button:focus-visible {
         </div>
       </article>
 
-      <article class="prop-card" role="listitem" data-status="rent">
+      <article class="prop-card" role="listitem" data-status="holiday">
         <div class="prop-img" aria-hidden="true">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=80')"></div>
           <div class="prop-tag tag-holiday">Holiday Let</div>
@@ -1487,6 +1488,9 @@ a:focus-visible, button:focus-visible {
         <p>We maintain additional listings not published on this site. Tell us your requirements and we'll come back to you within one working day.</p>
       </div>
       <a href="#contact" class="btn btn-gold">Send Your Requirements</a>
+    </div>
+    <div style="text-align:center;margin-top:1.5rem;">
+      <a href="properties/" style="font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;">Browse Full Property Portfolio &#8594;</a>
     </div>
   </div>
 </section>
@@ -1851,7 +1855,7 @@ a:focus-visible, button:focus-visible {
         <h3>Capital Growth</h3>
         <p>Property values in well-located coastal areas — particularly Nyali, Diani, and Vipingo — have generally increased over the past decade. Growth is uneven across the Coast and depends heavily on location, property condition, and title type. We recommend independent legal due diligence on all purchases.</p>
         <div class="invest-note">
-          <strong>Our advice</strong>
+          <strong>Our advice:</strong>
           Always verify title, check for encumbrances, and use a licensed advocate. We can recommend local legal professionals.
         </div>
       </article>
@@ -1860,7 +1864,7 @@ a:focus-visible, button:focus-visible {
         <h3>Rental Income</h3>
         <p>Quality rental properties in Nyali, Kizingo, and Bamburi maintain consistent demand from professionals, expats, and corporate tenants. Short-let properties near the beach can earn significantly more per night but require active management. We can advise on realistic yield expectations for a specific property.</p>
         <div class="invest-note">
-          <strong>Rental yields vary</strong>
+          <strong>Rental yields vary:</strong>
           Yields depend on location, furnishing level, and management quality. Ask us for a realistic estimate on a specific property.
         </div>
       </article>
@@ -1869,7 +1873,7 @@ a:focus-visible, button:focus-visible {
         <h3>Off-Plan Considerations</h3>
         <p>Off-plan purchases can offer early-investor pricing and structured payment plans. However, they carry completion and developer risk. We only market off-plan projects from developers we have assessed directly, and we are transparent about the risks involved in any project we present.</p>
         <div class="invest-note">
-          <strong>Do your due diligence</strong>
+          <strong>Do your due diligence:</strong>
           We provide information on off-plan projects we market. Independent legal review is always recommended before committing.
         </div>
       </article>
@@ -2010,37 +2014,35 @@ a:focus-visible, button:focus-visible {
         </div>
       </div>
 
-      <!-- Contact form — using mailto fallback. For full form submission, replace action with Formspree endpoint:
-           1. Sign up at formspree.io (free for up to 50 submissions/month)
-           2. Create a form and copy your endpoint e.g. https://formspree.io/f/yourcode
-           3. Replace the action attribute below with that URL and change method to "POST"
-      -->
       <div class="c-form">
         <h3>Send Us a Message</h3>
-        <form id="contact-form" action="mailto:info@azuriteproperties.co.ke" method="GET" enctype="text/plain" novalidate>
+        <p style="font-size:.78rem;color:rgba(255,255,255,.35);font-weight:300;margin-bottom:1.5rem;line-height:1.6;">We respond to all enquiries within one working day. Fields marked * are required.</p>
+        <form id="contact-form" action="https://formspree.io/f/xyzjqogv" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New Enquiry — Azurite Properties Ltd">
+          <input type="hidden" name="source_page" value="Homepage Contact Form">
           <div class="f-row">
             <div class="f-group">
-              <label for="fname">First Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="fname" name="First Name" placeholder="e.g. James" required autocomplete="given-name">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="first_name" placeholder="e.g. James" required autocomplete="given-name">
             </div>
             <div class="f-group">
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="Last Name" placeholder="e.g. Mwangi" autocomplete="family-name">
+              <input type="text" id="lname" name="last_name" placeholder="e.g. Mwangi" autocomplete="family-name">
             </div>
           </div>
           <div class="f-row">
             <div class="f-group">
-              <label for="femail">Email Address <span aria-hidden="true">*</span></label>
-              <input type="email" id="femail" name="Email" placeholder="you@example.com" required autocomplete="email">
+              <label for="femail">Email Address *</label>
+              <input type="email" id="femail" name="email" placeholder="you@example.com" required autocomplete="email">
             </div>
             <div class="f-group">
               <label for="fphone">Phone / WhatsApp</label>
-              <input type="tel" id="fphone" name="Phone" placeholder="+254 7XX XXX XXX" autocomplete="tel">
+              <input type="tel" id="fphone" name="phone" placeholder="+254 7XX XXX XXX" autocomplete="tel">
             </div>
           </div>
           <div class="f-group">
             <label for="fservice">I Am Interested In</label>
-            <select id="fservice" name="Service">
+            <select id="fservice" name="service">
               <option value="">Select an option…</option>
               <option>Property Management</option>
               <option>Buying a Property</option>
@@ -2049,6 +2051,7 @@ a:focus-visible, button:focus-visible {
               <option>Listing My Property for Rent</option>
               <option>Investment Enquiry</option>
               <option>Off-Plan Opportunity</option>
+              <option>Holiday Let Enquiry</option>
               <option>Developer / Marketing Partnership</option>
               <option>General Enquiry</option>
             </select>
@@ -2056,7 +2059,7 @@ a:focus-visible, button:focus-visible {
           <div class="f-row">
             <div class="f-group">
               <label for="floc">Preferred Location</label>
-              <select id="floc" name="Location">
+              <select id="floc" name="preferred_location">
                 <option value="">Any location…</option>
                 <option>Nyali / Bamburi</option>
                 <option>Kizingo / Mombasa Island</option>
@@ -2071,7 +2074,7 @@ a:focus-visible, button:focus-visible {
             </div>
             <div class="f-group">
               <label for="fbudget">Budget Range</label>
-              <select id="fbudget" name="Budget">
+              <select id="fbudget" name="budget">
                 <option value="">Select range…</option>
                 <option>Under KES 5M</option>
                 <option>KES 5M – 10M</option>
@@ -2083,11 +2086,17 @@ a:focus-visible, button:focus-visible {
             </div>
           </div>
           <div class="f-group">
-            <label for="fmsg">Message <span aria-hidden="true">*</span></label>
-            <textarea id="fmsg" name="Message" placeholder="Tell us about your property needs or questions…" required></textarea>
+            <label for="fmsg">Message *</label>
+            <textarea id="fmsg" name="message" placeholder="Tell us about your property needs or questions…" required></textarea>
           </div>
-          <p class="f-note">We respond to all enquiries within one working day. Alternatively, WhatsApp us directly for a faster response.</p>
+          <p class="f-note">Your enquiry goes directly to our team. We respond within one working day — usually faster. Alternatively, WhatsApp us for an immediate response.</p>
           <button type="submit" class="f-submit" id="fsubmit">Send Message</button>
+          <div id="form-success" style="display:none;margin-top:1rem;padding:1rem;background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.3);color:#25D366;font-size:.82rem;text-align:center;">
+            ✓ Message sent successfully. We will be in touch within one working day.
+          </div>
+          <div id="form-error" style="display:none;margin-top:1rem;padding:1rem;background:rgba(184,146,46,.08);border:1px solid rgba(184,146,46,.2);color:var(--gold-lt);font-size:.82rem;text-align:center;">
+            Something went wrong. Please WhatsApp us directly on +254 117 721 700.
+          </div>
         </form>
       </div>
     </div>
@@ -2262,25 +2271,43 @@ document.querySelectorAll('.pf').forEach(function(btn) {
   });
 });
 
-/* ─── Form handling ─── */
+/* ─── Form handling — Formspree ─── */
 var form = document.getElementById('contact-form');
 if (form) {
   form.addEventListener('submit', function(e) {
+    e.preventDefault();
     var fname = document.getElementById('fname').value.trim();
     var femail = document.getElementById('femail').value.trim();
     var fmsg = document.getElementById('fmsg').value.trim();
     var btn = document.getElementById('fsubmit');
+    var success = document.getElementById('form-success');
+    var error = document.getElementById('form-error');
     if (!fname || !femail || !fmsg) {
-      e.preventDefault();
       alert('Please fill in your name, email address, and message before sending.');
       return;
     }
-    btn.textContent = 'Opening email client\u2026';
+    btn.textContent = 'Sending\u2026';
     btn.disabled = true;
-    setTimeout(function() {
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(r) {
+      if (r.ok) {
+        form.reset();
+        if (success) success.style.display = 'block';
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+      } else {
+        if (error) error.style.display = 'block';
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+      }
+    }).catch(function() {
+      if (error) error.style.display = 'block';
       btn.textContent = 'Send Message';
       btn.disabled = false;
-    }, 3000);
+    });
   });
 }
 </script>

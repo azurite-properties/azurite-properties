@@ -3,2247 +3,425 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ═══ SEO & META ═══ -->
-<title>Azurite Properties Ltd | Real Estate · Mombasa & Kenyan Coast</title>
-<meta name="description" content="Azurite Properties Ltd offers property management, sales, lettings, and real estate marketing across Mombasa, Nyali, Diani, Kizingo, and the wider Kenya Coast.">
-<meta name="keywords" content="real estate Mombasa, property management Kenya Coast, apartments Nyali, property for sale Mombasa, Diani beach houses, Kenya coastal property">
+<title>Properties | Azurite Properties Ltd — Mombasa & Kenya Coast</title>
+<meta name="description" content="Browse all available properties — off-plan, for sale, for rent, investment, and holiday stays across Mombasa and the Kenya Coast. Azurite Properties Ltd.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://azuriteproperties.co.ke/">
-
-<!-- ═══ FAVICON ═══ -->
-<link rel="icon" type="image/jpeg" href="logo.jpeg">
-<link rel="apple-touch-icon" href="logo.jpeg">
-
-<!-- ═══ OPEN GRAPH ═══ -->
+<link rel="canonical" href="https://azuriteproperties.co.ke/properties/">
+<link rel="icon" type="image/jpeg" href="../logo.jpeg">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Azurite Properties Ltd | Mombasa Real Estate">
-<meta property="og:description" content="Property management, sales, lettings, and real estate marketing across Mombasa and the Kenya Coast.">
-<meta property="og:url" content="https://azuriteproperties.co.ke/">
+<meta property="og:title" content="Properties | Azurite Properties Ltd">
+<meta property="og:description" content="Browse all available properties across Mombasa and the Kenya Coast.">
+<meta property="og:url" content="https://azuriteproperties.co.ke/properties/">
 <meta property="og:image" content="https://azuriteproperties.co.ke/logo.jpeg">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1080">
-<meta property="og:locale" content="en_KE">
-<meta property="og:site_name" content="Azurite Properties Ltd">
-
-<!-- ═══ TWITTER CARD ═══ -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@Azurite_Ltd">
-<meta name="twitter:title" content="Azurite Properties Ltd | Mombasa Real Estate">
-<meta name="twitter:description" content="Property management, sales, lettings, and real estate marketing across Mombasa and the Kenya Coast.">
-<meta name="twitter:image" content="https://azuriteproperties.co.ke/logo.jpeg">
-
-<!-- ═══ STRUCTURED DATA — helps Google show logo ═══ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "name": "Azurite Properties Ltd",
-  "url": "https://azuriteproperties.co.ke",
-  "logo": "https://azuriteproperties.co.ke/logo.jpeg",
-  "image": "https://azuriteproperties.co.ke/logo.jpeg",
-  "description": "Property management, sales, lettings, and real estate marketing across Mombasa and the Kenya Coast.",
-  "telephone": "+254117000666",
-  "email": "info@azuriteproperties.co.ke",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "16th Floor, Moonlight Luxury Apartment, Msaada Avenue",
-    "addressLocality": "Tudor, Mombasa",
-    "addressCountry": "KE"
-  },
-  "sameAs": [
-    "https://facebook.com/azuriteproperties",
-    "https://instagram.com/azuriteproperties",
-    "https://tiktok.com/@azurite.property",
-    "https://x.com/Azurite_Ltd"
-  ]
-}
-</script>
-
-<!-- ═══ FONTS ═══ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-/* ═══════════════════════════
-   DESIGN TOKENS
-═══════════════════════════ */
-:root {
-  --navy:      #0A1929;
-  --navy-2:    #112236;
-  --navy-3:    #1A3050;
-  --teal:      #1B5E6E;
-  --teal-lt:   #2A7D92;
-  --gold:      #B8922E;
-  --gold-lt:   #D4AE5A;
-  --sand-lt:   #EDE3D3;
-  --cream:     #F7F3EC;
-  --charcoal:  #2C3340;
-  --mid:       #5A6478;
-  --light:     #8A95A3;
-  --white:     #FFFFFF;
-  --green-wa:  #25D366;
-  --ff-serif:  'Playfair Display', Georgia, serif;
-  --ff-sans:   'DM Sans', system-ui, sans-serif;
-  --radius:    2px;
-}
-
-/* ═══════════════════════════
-   RESET & BASE
-═══════════════════════════ */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
-body {
-  font-family: var(--ff-sans);
-  background: var(--cream);
-  color: var(--charcoal);
-  overflow-x: hidden;
-  line-height: 1.7;
-}
-img { display: block; max-width: 100%; }
-a { text-decoration: none; color: inherit; }
-ul { list-style: none; }
-button { font-family: inherit; cursor: pointer; }
-
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--navy); }
-::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
-
-/* ═══════════════════════════
-   LAYOUT
-═══════════════════════════ */
-.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-section { padding: 5rem 0; }
-
-/* ═══════════════════════════
-   TYPOGRAPHY HELPERS
-═══════════════════════════ */
-.eyebrow {
-  display: inline-flex; align-items: center; gap: .55rem;
-  font-size: .6rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: .9rem;
-}
-.eyebrow::before, .eyebrow::after {
-  content: ''; display: block; width: 20px; height: 1px;
-  background: var(--gold); opacity: .55;
-}
-h1, h2, h3 { font-family: var(--ff-serif); line-height: 1.15; }
-.section-title {
-  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-  margin-bottom: .8rem;
-}
-.section-lead {
-  font-size: .95rem; font-weight: 300; line-height: 1.85;
-  color: var(--mid); max-width: 520px; margin: 0 auto;
-}
-
-/* ═══════════════════════════
-   BUTTONS
-═══════════════════════════ */
-.btn {
-  display: inline-flex; align-items: center; gap: .5rem;
-  padding: .82rem 1.9rem;
-  font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
-  border: none; border-radius: var(--radius);
-  transition: background .3s, color .3s, border-color .3s;
-}
-.btn-gold     { background: var(--gold);  color: var(--white); }
-.btn-gold:hover { background: #a07828; }
-.btn-navy     { background: var(--navy);  color: var(--white); }
-.btn-navy:hover { background: var(--navy-3); }
-.btn-outline-w { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,.5); }
-.btn-outline-w:hover { background: rgba(255,255,255,.1); border-color: var(--white); }
-.btn-outline-n { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
-.btn-outline-n:hover { background: var(--navy); color: var(--white); }
-.btn-white    { background: var(--white); color: var(--gold); font-weight: 700; }
-.btn-white:hover { background: var(--navy); color: var(--white); }
-
-/* ═══════════════════════════
-   SKIP LINK (ACCESSIBILITY)
-═══════════════════════════ */
-.skip-link {
-  position: absolute; top: -40px; left: 1rem;
-  background: var(--gold); color: var(--white);
-  padding: .5rem 1rem; font-size: .8rem; font-weight: 600;
-  z-index: 9999; border-radius: 0 0 4px 4px;
-  transition: top .2s;
-}
-.skip-link:focus { top: 0; }
-
-/* ═══════════════════════════
-   NAVIGATION
-═══════════════════════════ */
-#nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
-  padding: 1rem 0; transition: all .35s ease;
-  background: rgba(10,25,41,.15);
-  backdrop-filter: blur(8px);
-}
-#nav.scrolled {
-  background: rgba(10,25,41,.97);
-  backdrop-filter: blur(20px);
-  padding: .7rem 0;
-  box-shadow: 0 2px 40px rgba(0,0,0,.35);
-}
-.nav-wrap {
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-}
-.logo {
-  display: flex; align-items: center; line-height: 1;
-  text-decoration: none;
-}
-.logo img {
-  height: 64px;
-  width: auto;
-  object-fit: contain;
-  display: block;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,.4));
-  transition: height .35s ease;
-}
-#nav.scrolled .logo img {
-  height: 52px;
-}
-@media (max-width: 768px) {
-  .logo img { height: 48px; }
-  #nav.scrolled .logo img { height: 42px; }
-}
-.nav-links {
-  display: flex; align-items: center; gap: 1.75rem;
-}
-.nav-links a {
-  color: rgba(255,255,255,.7); font-size: .7rem; font-weight: 500;
-  letter-spacing: .09em; text-transform: uppercase;
-  position: relative; transition: color .25s;
-}
-.nav-links a::after {
-  content: ''; position: absolute; bottom: -3px; left: 0;
-  width: 0; height: 1px; background: var(--gold-lt); transition: width .25s;
-}
-.nav-links a:hover { color: var(--gold-lt); }
-.nav-links a:hover::after { width: 100%; }
-.nav-right { display: flex; align-items: center; gap: .75rem; }
-.nav-wa {
-  display: flex; align-items: center; gap: .4rem;
-  font-size: .67rem; font-weight: 600; color: rgba(255,255,255,.55);
-  transition: color .25s;
-}
-.nav-wa:hover { color: var(--green-wa); }
-.nav-wa svg { width: 15px; height: 15px; fill: var(--green-wa); flex-shrink: 0; }
-
-/* hamburger */
-.hamburger {
-  display: none; flex-direction: column; gap: 5px;
-  cursor: pointer; padding: 4px; background: none; border: none;
-}
-.hamburger span {
-  display: block; width: 22px; height: 1.5px;
-  background: rgba(255,255,255,.8); transition: .3s;
-}
-
-/* mobile overlay */
-#mobile-nav {
-  display: none; position: fixed; inset: 0; z-index: 890;
-  background: rgba(10,25,41,.98); backdrop-filter: blur(20px);
-  flex-direction: column; align-items: center; justify-content: center;
-  gap: 2.25rem;
-}
-#mobile-nav.open { display: flex; }
-#mobile-nav a {
-  font-family: var(--ff-serif); font-size: 1.8rem; font-weight: 600;
-  color: rgba(255,255,255,.75); transition: color .25s;
-}
-#mobile-nav a:hover { color: var(--gold-lt); }
-#mobile-nav .mn-close {
-  position: absolute; top: 1.5rem; right: 1.5rem;
-  background: none; border: none; color: rgba(255,255,255,.5);
-  font-size: 1.6rem; cursor: pointer; padding: .5rem;
-}
-
-/* ═══════════════════════════
-   HERO
-═══════════════════════════ */
-#hero {
-  min-height: 100vh; display: flex; align-items: flex-end;
-  position: relative; overflow: hidden; padding-bottom: 0;
-}
-.hero-bg {
-  position: absolute; inset: 0; z-index: 0;
-  background: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80')
-    center 40% / cover no-repeat;
-}
-.hero-overlay {
-  position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(170deg,
-    rgba(10,25,41,.78) 0%,
-    rgba(10,25,41,.62) 45%,
-    rgba(10,25,41,.93) 100%);
-}
-.hero-body { position: relative; z-index: 2; width: 100%; }
-.hero-inner {
-  display: grid; grid-template-columns: 1fr 360px;
-  align-items: flex-end; gap: 2.5rem;
-  padding: 9rem 1.5rem 0; max-width: 1200px; margin: 0 auto;
-}
-.hero-h1 {
-  font-size: clamp(2.6rem, 5.2vw, 5rem);
-  color: var(--white); line-height: 1.07; margin-bottom: 1.2rem;
-}
-.hero-h1 em { color: var(--gold-lt); font-style: italic; }
-.hero-sub {
-  font-size: .98rem; color: rgba(255,255,255,.65);
-  max-width: 540px; font-weight: 300; line-height: 1.85; margin-bottom: 2rem;
-}
-.hero-btns { display: flex; gap: .8rem; flex-wrap: wrap; }
-
-/* featured listing card */
-.hero-card {
-  background: rgba(10,25,41,.75); backdrop-filter: blur(18px);
-  border: 1px solid rgba(255,255,255,.1);
-  padding: 1.75rem; align-self: flex-end;
-}
-.hero-card-tag {
-  font-size: .58rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
-  color: var(--gold-lt); margin-bottom: .6rem;
-}
-.hero-card-title {
-  font-family: var(--ff-serif); font-size: 1.1rem;
-  color: var(--white); margin-bottom: .3rem;
-}
-.hero-card-loc { font-size: .72rem; color: rgba(255,255,255,.45); margin-bottom: .9rem; }
-.hero-card-price {
-  font-family: var(--ff-serif); font-size: 1.55rem; font-weight: 600; color: var(--gold-lt);
-}
-.hero-card-price small {
-  font-family: var(--ff-sans); font-size: .62rem;
-  color: rgba(255,255,255,.4); font-weight: 400; display: block; margin-top: 2px;
-}
-.hero-card-cta {
-  display: block; text-align: center; margin-top: 1.1rem;
-  padding: .72rem; background: var(--gold); color: var(--white);
-  font-size: .65rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
-  transition: background .3s;
-}
-.hero-card-cta:hover { background: #a07828; }
-
-/* stats bar */
-.hero-stats {
-  margin-top: 3.5rem;
-  background: rgba(10,25,41,.78); backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(184,146,46,.2);
-}
-.hero-stats-inner {
-  max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;
-  display: grid; grid-template-columns: repeat(4,1fr);
-}
-.h-stat {
-  padding: 1.5rem 1rem; text-align: center;
-  border-right: 1px solid rgba(255,255,255,.06);
-}
-.h-stat:last-child { border-right: none; }
-.h-stat-n {
-  font-family: var(--ff-serif); font-size: 2.2rem;
-  font-weight: 600; color: var(--gold-lt); line-height: 1;
-}
-.h-stat-l {
-  font-size: .6rem; letter-spacing: .14em; text-transform: uppercase;
-  color: rgba(255,255,255,.38); margin-top: 4px;
-}
-
-/* ═══════════════════════════
-   TRUST BAR
-═══════════════════════════ */
-#trust {
-  padding: .8rem 0; background: var(--navy);
-  border-bottom: 1px solid rgba(184,146,46,.1);
-}
-.trust-list {
-  display: flex; align-items: center; justify-content: center;
-  gap: 2.5rem; flex-wrap: wrap;
-}
-.trust-item {
-  display: flex; align-items: center; gap: .45rem;
-  font-size: .62rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase;
-  color: rgba(255,255,255,.38);
-}
-.trust-item svg { width: 13px; height: 13px; fill: var(--gold); flex-shrink: 0; }
-
-/* ═══════════════════════════
-   ABOUT
-═══════════════════════════ */
-#about { background: var(--cream); }
-.about-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 4.5rem; align-items: center;
-}
-.about-visual { position: relative; }
-.about-img {
-  width: 100%; height: 480px;
-  background: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80')
-    center / cover; display: block;
-}
-.about-frame {
-  position: absolute; top: -1.25rem; left: -1.25rem;
-  width: 50%; height: 50%; border: 1px solid var(--gold); opacity: .22; pointer-events: none;
-}
-.about-pill {
-  position: absolute; top: 1.5rem; right: -1.75rem;
-  background: var(--gold); color: var(--white); padding: 1.4rem;
-  text-align: center; min-width: 120px;
-}
-.about-pill .n { font-family: var(--ff-serif); font-size: 2.6rem; font-weight: 700; line-height: 1; }
-.about-pill .l { font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; opacity: .9; margin-top: 3px; }
-
-.about-text h2 { color: var(--navy); margin-bottom: 1.1rem; }
-.about-text p { color: var(--mid); font-size: .92rem; font-weight: 300; line-height: 1.88; margin-bottom: 1rem; }
-.about-values {
-  display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; margin-top: 1.6rem;
-}
-.about-val {
-  display: flex; align-items: center; gap: .65rem;
-  padding: .85rem 1rem; background: var(--white);
-  border-left: 2px solid var(--gold);
-  font-size: .8rem; font-weight: 500; color: var(--navy);
-}
-.about-val::before { content: '✦'; color: var(--gold); font-size: .68rem; flex-shrink: 0; }
-
-/* ═══════════════════════════
-   SERVICES
-═══════════════════════════ */
-#services { background: var(--navy); position: relative; overflow: hidden; }
-#services::before {
-  content: 'SERVICES'; position: absolute; right: -2rem; bottom: 0;
-  font-family: var(--ff-serif); font-size: 12rem; font-weight: 700;
-  color: rgba(255,255,255,.018); pointer-events: none; white-space: nowrap; line-height: 1;
-}
-.sec-head { text-align: center; margin-bottom: 3.5rem; }
-.sec-head h2 { color: var(--white); }
-.sec-head .section-lead { color: rgba(255,255,255,.45); margin: .5rem auto 0; }
-#services .sec-head h2 { color: var(--white); }
-
-.svc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: rgba(184,146,46,.1); }
-.svc-card {
-  background: var(--navy); padding: 2.25rem 1.85rem;
-  border: 1px solid rgba(184,146,46,.07);
-  position: relative; overflow: hidden; transition: background .35s;
-}
-.svc-card:hover { background: rgba(26,48,80,.9); }
-.svc-n {
-  position: absolute; top: 1rem; right: 1.4rem;
-  font-family: var(--ff-serif); font-size: 3.5rem; font-weight: 700;
-  color: rgba(184,146,46,.06); line-height: 1; pointer-events: none;
-}
-.svc-icon {
-  width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
-  border: 1px solid rgba(184,146,46,.28); margin-bottom: 1.25rem;
-  font-size: 1.1rem; color: var(--gold-lt); transition: all .3s;
-}
-.svc-card:hover .svc-icon { background: var(--gold); border-color: var(--gold); }
-.svc-card h3 { font-family: var(--ff-serif); font-size: 1.15rem; color: var(--white); margin-bottom: .55rem; }
-.svc-card p { font-size: .82rem; color: rgba(255,255,255,.44); line-height: 1.75; font-weight: 300; }
-.svc-link {
-  display: inline-flex; align-items: center; gap: .3rem;
-  margin-top: 1.1rem; font-size: .65rem; font-weight: 600;
-  letter-spacing: .13em; text-transform: uppercase; color: var(--gold);
-  transition: gap .25s;
-}
-.svc-link:hover { gap: .55rem; }
-
-/* ═══════════════════════════
-   FEATURED PROPERTIES
-═══════════════════════════ */
-#properties { background: var(--cream); }
-.sec-head-light h2 { color: var(--navy); }
-.sec-head-light .section-lead { color: var(--mid); }
-
-.prop-filters {
-  display: flex; align-items: center; justify-content: center;
-  gap: .45rem; flex-wrap: wrap; margin-bottom: 2.75rem;
-}
-.pf {
-  padding: .42rem 1.1rem; border: 1px solid rgba(10,25,41,.18);
-  background: transparent; color: var(--mid);
-  font-size: .65rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
-  cursor: pointer; transition: all .25s; font-family: var(--ff-sans);
-  border-radius: var(--radius);
-}
-.pf.active, .pf:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
-
-.prop-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.4rem; }
-.prop-card {
-  background: var(--white); overflow: hidden;
-  border: 1px solid rgba(184,146,46,.1);
-  display: flex; flex-direction: column;
-  transition: transform .35s, box-shadow .35s;
-}
-.prop-card:hover { transform: translateY(-5px); box-shadow: 0 20px 55px rgba(10,25,41,.11); }
-
-.prop-img { height: 215px; position: relative; overflow: hidden; flex-shrink: 0; }
-.prop-img-inner {
-  width: 100%; height: 100%; background-size: cover; background-position: center;
-  transition: transform .5s ease;
-}
-.prop-card:hover .prop-img-inner { transform: scale(1.05); }
-
-.prop-tag {
-  position: absolute; top: .8rem; left: .8rem;
-  font-size: .58rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase;
-  padding: .28rem .75rem;
-}
-.tag-sale    { background: var(--navy); color: var(--white); }
-.tag-rent    { background: var(--teal); color: var(--white); }
-.tag-offplan { background: var(--gold); color: var(--white); }
-.tag-invest  { background: var(--charcoal); color: var(--white); }
-.tag-holiday { background: var(--teal-lt); color: var(--white); }
-
-.prop-type {
-  position: absolute; bottom: .8rem; right: .8rem;
-  background: rgba(10,25,41,.82); backdrop-filter: blur(6px);
-  font-size: .58rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--gold-lt); padding: .26rem .65rem;
-}
-
-.prop-body { padding: 1.3rem 1.4rem 1.4rem; display: flex; flex-direction: column; flex: 1; }
-.prop-loc {
-  display: flex; align-items: center; gap: .3rem;
-  font-size: .67rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
-  color: var(--teal-lt); margin-bottom: .4rem;
-}
-.prop-loc svg { width: 10px; height: 10px; fill: var(--teal-lt); flex-shrink: 0; }
-.prop-title { font-family: var(--ff-serif); font-size: 1.05rem; color: var(--navy); margin-bottom: .4rem; }
-.prop-desc { font-size: .8rem; color: var(--mid); font-weight: 300; line-height: 1.65; margin-bottom: .9rem; flex: 1; }
-
-.prop-specs {
-  display: flex; gap: 1rem; flex-wrap: wrap;
-  padding: .75rem 0; border-top: 1px solid var(--sand-lt); border-bottom: 1px solid var(--sand-lt);
-  margin-bottom: .9rem;
-}
-.prop-spec { display: flex; align-items: center; gap: .28rem; font-size: .7rem; color: var(--mid); }
-.prop-spec svg { width: 12px; height: 12px; fill: var(--gold); flex-shrink: 0; }
-
-.prop-foot { display: flex; align-items: flex-end; justify-content: space-between; }
-.prop-price {
-  font-family: var(--ff-serif); font-size: 1.25rem; font-weight: 600; color: var(--navy); line-height: 1;
-}
-.prop-price small {
-  font-family: var(--ff-sans); font-size: .62rem; color: var(--mid);
-  font-weight: 400; display: block; margin-top: 2px;
-}
-.prop-enquire {
-  display: flex; align-items: center; gap: .28rem;
-  font-size: .65rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--gold); transition: gap .25s;
-}
-.prop-enquire:hover { gap: .5rem; }
-.prop-enquire svg { width: 13px; height: 13px; fill: var(--gold); }
-
-.prop-footer-bar {
-  margin-top: 2.75rem;
-  background: var(--navy); padding: 2rem 2.25rem;
-  display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;
-}
-.prop-footer-bar p { font-size: .9rem; color: rgba(255,255,255,.55); font-weight: 300; max-width: 440px; text-align: left; }
-.prop-footer-bar strong { font-family: var(--ff-serif); display: block; font-size: 1.4rem; color: var(--white); margin-bottom: .3rem; }
-
-/* ═══════════════════════════
-   WHY AZURITE
-═══════════════════════════ */
-#why { background: var(--sand-lt); }
-.why-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 4.5rem; align-items: start; }
-.why-text h2 { color: var(--navy); margin-bottom: .9rem; }
-.why-text > p { color: var(--mid); font-size: .92rem; font-weight: 300; line-height: 1.88; margin-bottom: 2.25rem; }
-.why-list { display: flex; flex-direction: column; }
-.why-item {
-  display: flex; gap: 1.2rem; align-items: flex-start;
-  padding: 1.25rem 0; border-bottom: 1px solid rgba(10,25,41,.08);
-}
-.why-num {
-  font-family: var(--ff-serif); font-size: 1.2rem; font-weight: 600;
-  color: var(--gold); flex-shrink: 0; width: 1.8rem; line-height: 1; padding-top: 2px;
-}
-.why-item h4 { font-size: .86rem; font-weight: 600; color: var(--navy); margin-bottom: .22rem; font-family: var(--ff-sans); }
-.why-item p  { font-size: .78rem; color: var(--mid); font-weight: 300; line-height: 1.68; }
-.why-visual { position: relative; }
-.why-img {
-  width: 100%; height: 540px;
-  background: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80') center / cover;
-}
-.why-badge {
-  position: absolute; bottom: 0; left: 0;
-  background: var(--gold); color: var(--white); padding: 1.75rem 1.5rem;
-}
-.why-badge .n { font-family: var(--ff-serif); font-size: 2.8rem; font-weight: 700; line-height: 1; }
-.why-badge .l { font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; margin-top: 3px; opacity: .9; }
-
-/* ═══════════════════════════
-   AREAS
-═══════════════════════════ */
-#areas { background: var(--navy); position: relative; overflow: hidden; }
-.areas-bg {
-  position: absolute; inset: 0;
-  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=60')
-    center / cover no-repeat; opacity: .05;
-}
-.areas-inner { position: relative; z-index: 1; }
-#areas .sec-head h2 { color: var(--white); }
-#areas .sec-head .section-lead { color: rgba(255,255,255,.42); }
-
-.areas-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: rgba(184,146,46,.1); }
-.area-card {
-  background: var(--navy); padding: 1.85rem 1.5rem;
-  border: 1px solid rgba(184,146,46,.07); transition: background .35s;
-}
-.area-card:hover { background: rgba(26,48,80,.8); }
-.area-icon { font-size: 1.4rem; margin-bottom: .85rem; }
-.area-card h3 { font-family: var(--ff-serif); font-size: 1.1rem; color: var(--white); margin-bottom: .35rem; }
-.area-card p  { font-size: .74rem; color: rgba(255,255,255,.38); font-weight: 300; line-height: 1.68; margin-bottom: .9rem; }
-.area-tags   { display: flex; flex-wrap: wrap; gap: .35rem; }
-.area-tag {
-  font-size: .57rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
-  background: rgba(184,146,46,.1); color: var(--gold); padding: .2rem .6rem;
-}
-
-/* ═══════════════════════════
-   DEVELOPER SUPPORT
-═══════════════════════════ */
-#developer { background: var(--cream); }
-.dev-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items: center; }
-.dev-img {
-  width: 100%; height: 480px;
-  background: url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=900&q=80')
-    center / cover; display: block; position: relative;
-}
-.dev-pull {
-  position: absolute; bottom: 2rem; right: -1.75rem;
-  background: var(--navy); color: var(--white);
-  padding: 1.5rem; max-width: 200px; border-left: 3px solid var(--gold);
-}
-.dev-pull p {
-  font-family: var(--ff-serif); font-style: italic;
-  font-size: .85rem; color: rgba(255,255,255,.7); line-height: 1.5;
-}
-.dev-pull cite {
-  display: block; font-size: .6rem; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--gold); margin-top: .6rem; font-style: normal; font-family: var(--ff-sans); font-weight: 600;
-}
-.dev-text h2 { color: var(--navy); margin-bottom: 1rem; }
-.dev-text > p { color: var(--mid); font-size: .92rem; font-weight: 300; line-height: 1.88; margin-bottom: 1rem; }
-.dev-list { display: flex; flex-direction: column; gap: .7rem; margin: 1.75rem 0; }
-.dev-item {
-  display: flex; align-items: flex-start; gap: .8rem;
-  padding: .95rem 1.15rem; background: var(--white);
-  border-left: 2px solid transparent; transition: border-color .25s;
-}
-.dev-item:hover { border-left-color: var(--gold); }
-.dev-ico {
-  width: 34px; height: 34px; background: rgba(184,146,46,.08);
-  display: flex; align-items: center; justify-content: center;
-  font-size: .88rem; flex-shrink: 0;
-}
-.dev-item h4 { font-size: .82rem; font-weight: 600; color: var(--navy); margin-bottom: .2rem; }
-.dev-item p  { font-size: .75rem; color: var(--mid); font-weight: 300; }
-
-/* ═══════════════════════════
-   PROPERTY MANAGEMENT
-═══════════════════════════ */
-#management { background: var(--navy); }
-.mgmt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items: start; }
-.mgmt-text h2 { color: var(--white); margin-bottom: .9rem; }
-.mgmt-text > p { color: rgba(255,255,255,.52); font-size: .92rem; font-weight: 300; line-height: 1.88; margin-bottom: 1.25rem; }
-.mgmt-feats { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; margin-top: 1.75rem; }
-.mgmt-feat {
-  padding: 1.3rem; border: 1px solid rgba(184,146,46,.1); transition: border-color .3s;
-}
-.mgmt-feat:hover { border-color: rgba(184,146,46,.32); }
-.mgmt-feat-ico { font-size: 1.15rem; margin-bottom: .6rem; }
-.mgmt-feat h4 { font-size: .8rem; font-weight: 600; color: var(--gold-lt); margin-bottom: .25rem; }
-.mgmt-feat p  { font-size: .74rem; color: rgba(255,255,255,.36); font-weight: 300; }
-.mgmt-visual  { position: relative; }
-.mgmt-img {
-  width: 100%; height: 500px;
-  background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&q=80')
-    center / cover;
-}
-.mgmt-strip {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
-  background: rgba(184,146,46,.18); margin-top: 1px;
-}
-.mgmt-stat {
-  background: rgba(10,25,41,.95); padding: 1.15rem;
-  text-align: center;
-}
-.mgmt-stat .n { font-family: var(--ff-serif); font-size: 1.7rem; font-weight: 600; color: var(--gold-lt); }
-.mgmt-stat .l { font-size: .58rem; letter-spacing: .13em; text-transform: uppercase; color: rgba(255,255,255,.33); margin-top: 2px; }
-
-/* ═══════════════════════════
-   INVESTMENT
-═══════════════════════════ */
-#investment { background: var(--sand-lt); }
-#investment .sec-head h2 { color: var(--navy); }
-#investment .sec-head .section-lead { color: var(--mid); }
-.invest-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.4rem; }
-.invest-card {
-  background: var(--white); padding: 1.85rem;
-  border: 1px solid rgba(184,146,46,.1); border-top: 3px solid transparent;
-  transition: border-top-color .35s, transform .35s;
-}
-.invest-card:hover { border-top-color: var(--gold); transform: translateY(-4px); }
-.invest-ico { font-size: 1.85rem; margin-bottom: .85rem; }
-.invest-card h3 { font-family: var(--ff-serif); font-size: 1.2rem; color: var(--navy); margin-bottom: .55rem; }
-.invest-card p  { font-size: .82rem; color: var(--mid); font-weight: 300; line-height: 1.75; margin-bottom: 1.15rem; }
-.invest-note {
-  padding: .8rem 1rem; background: var(--cream); border-left: 2px solid var(--gold);
-  font-size: .72rem; color: var(--mid);
-}
-.invest-note strong { color: var(--navy); font-weight: 600; display: block; margin-bottom: 2px; }
-
-/* ═══════════════════════════
-   TESTIMONIALS
-═══════════════════════════ */
-#testimonials { background: var(--cream); }
-#testimonials .sec-head h2 { color: var(--navy); }
-.testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.4rem; }
-.testi-card {
-  background: var(--white); padding: 2rem;
-  border: 1px solid rgba(184,146,46,.1);
-  position: relative; overflow: hidden; transition: transform .3s;
-}
-.testi-card:hover { transform: translateY(-4px); }
-.testi-card::before {
-  content: '\201C'; font-family: var(--ff-serif); font-size: 5.5rem;
-  color: var(--gold); opacity: .07;
-  position: absolute; top: -.3rem; left: .8rem; line-height: 1; pointer-events: none;
-}
-.testi-stars { color: var(--gold); font-size: .7rem; letter-spacing: .15em; margin-bottom: .85rem; }
-.testi-text {
-  font-family: var(--ff-serif); font-style: italic;
-  font-size: .95rem; color: var(--mid); line-height: 1.85; margin-bottom: 1.4rem;
-}
-.testi-author { display: flex; align-items: center; gap: .75rem; }
-.testi-av {
-  width: 42px; height: 42px; border-radius: 50%; background: var(--navy);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--ff-serif); font-size: 1rem; font-weight: 600;
-  color: var(--gold-lt); flex-shrink: 0;
-}
-.testi-name { font-size: .82rem; font-weight: 600; color: var(--navy); }
-.testi-role { font-size: .7rem; color: var(--light); }
-.testi-disclaimer {
-  text-align: center; margin-top: 2rem;
-  font-size: .72rem; color: var(--light); font-style: italic;
-}
-
-/* ═══════════════════════════
-   CTA BAND
-═══════════════════════════ */
-#cta-band { padding: 5.5rem 0; background: var(--navy-3); position: relative; overflow: hidden; }
-#cta-band::before {
-  content: ''; position: absolute; inset: 0;
-  background: url('https://images.unsplash.com/photo-1576941089067-2de3c901e126?w=1200&q=50')
-    center / cover no-repeat; opacity: .07;
-}
-.cta-inner {
-  position: relative; z-index: 1;
-  display: grid; grid-template-columns: 1fr auto;
-  align-items: center; gap: 3rem;
-}
-.cta-text h2 { color: var(--white); margin-bottom: .7rem; }
-.cta-text p  { color: rgba(255,255,255,.5); font-size: .9rem; font-weight: 300; max-width: 480px; line-height: 1.8; }
-.cta-btns { display: flex; flex-direction: column; gap: .7rem; min-width: 210px; }
-
-/* ═══════════════════════════
-   CONTACT
-═══════════════════════════ */
-#contact { padding: 5.5rem 0; background: #060F1C; }
-.contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: start; }
-
-.contact-info h2 { color: var(--white); margin-bottom: 1.1rem; }
-.contact-info > p { color: rgba(255,255,255,.44); font-size: .88rem; font-weight: 300; line-height: 1.85; margin-bottom: 2.25rem; }
-.c-items { display: flex; flex-direction: column; gap: .9rem; }
-.c-item {
-  display: flex; align-items: flex-start; gap: .9rem;
-  padding: 1.1rem 1.15rem; border: 1px solid rgba(184,146,46,.1);
-  transition: border-color .25s;
-}
-.c-item:hover { border-color: rgba(184,146,46,.32); }
-.c-ico {
-  width: 34px; height: 34px; background: rgba(184,146,46,.08);
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0; font-size: .82rem;
-}
-.c-label { font-size: .58rem; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 2px; }
-.c-val   { font-size: .84rem; color: rgba(255,255,255,.65); }
-.c-val a { color: rgba(255,255,255,.65); transition: color .25s; }
-.c-val a:hover { color: var(--gold-lt); }
-
-.wa-big {
-  display: flex; align-items: center; gap: .8rem;
-  margin-top: 1.75rem; padding: 1rem 1.6rem;
-  background: var(--green-wa); color: var(--white);
-  font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-  width: fit-content; transition: background .25s;
-}
-.wa-big:hover { background: #1db954; }
-.wa-big svg { width: 19px; height: 19px; fill: white; flex-shrink: 0; }
-
-.socials { display: flex; gap: .6rem; margin-top: 1.6rem; }
-.soc {
-  width: 35px; height: 35px; border: 1px solid rgba(184,146,46,.18);
-  display: flex; align-items: center; justify-content: center;
-  font-size: .68rem; font-weight: 700; color: rgba(255,255,255,.38);
-  transition: all .25s;
-}
-.soc:hover { background: var(--gold); border-color: var(--gold); color: var(--white); }
-
-/* ─── CONTACT FORM ─── */
-.c-form { background: rgba(255,255,255,.04); border: 1px solid rgba(184,146,46,.12); padding: 2.25rem; }
-.c-form h3 { font-family: var(--ff-serif); font-size: 1.4rem; color: var(--white); margin-bottom: 1.5rem; }
-.f-row { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; margin-bottom: .9rem; }
-.f-group { display: flex; flex-direction: column; gap: .38rem; margin-bottom: .9rem; }
-.f-group label {
-  font-size: .6rem; letter-spacing: .16em; text-transform: uppercase;
-  color: rgba(255,255,255,.34); font-weight: 600;
-}
-.f-group input,
-.f-group select,
-.f-group textarea {
-  background: rgba(255,255,255,.05); border: 1px solid rgba(184,146,46,.18);
-  color: var(--white); padding: .78rem .95rem;
-  font-family: var(--ff-sans); font-size: .84rem;
-  outline: none; transition: border-color .25s; width: 100%;
-  border-radius: var(--radius);
-}
-.f-group input:focus,
-.f-group select:focus,
-.f-group textarea:focus { border-color: var(--gold); }
-.f-group input::placeholder,
-.f-group textarea::placeholder { color: rgba(255,255,255,.2); }
-.f-group select option { background: #0A1929; color: var(--white); }
-.f-group textarea { resize: vertical; min-height: 90px; }
-.f-note {
-  font-size: .7rem; color: rgba(255,255,255,.3); margin-bottom: 1.1rem;
-  font-style: italic; line-height: 1.6;
-}
-.f-submit {
-  width: 100%; padding: 1rem; background: var(--gold); color: var(--white);
-  border: none; font-family: var(--ff-sans); font-size: .72rem; font-weight: 600;
-  letter-spacing: .16em; text-transform: uppercase; cursor: pointer; transition: background .3s;
-  border-radius: var(--radius);
-}
-.f-submit:hover { background: #a07828; }
-.f-submit:focus-visible { outline: 2px solid var(--gold-lt); outline-offset: 2px; }
-
-/* ═══════════════════════════
-   MANAGED PORTFOLIO
-═══════════════════════════ */
-#managed-portfolio { background: var(--navy); position: relative; overflow: hidden; }
-#managed-portfolio::before {
-  content: 'TUDOR';
-  position: absolute; right: -1rem; top: 3rem;
-  font-family: var(--ff-serif); font-size: 11rem; font-weight: 700;
-  color: rgba(255,255,255,.02); pointer-events: none; white-space: nowrap; line-height: 1;
-}
-#managed-portfolio .sec-head h2 { color: var(--white); }
-#managed-portfolio .sec-head .section-lead { color: rgba(255,255,255,.45); }
-.mp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.mp-card {
-  background: rgba(255,255,255,.04); border: 1px solid rgba(184,146,46,.15);
-  overflow: hidden; transition: border-color .35s, transform .35s;
-}
-.mp-card:hover { border-color: rgba(184,146,46,.4); transform: translateY(-4px); }
-.mp-img-wrap { position: relative; height: 320px; overflow: hidden; }
-.mp-img-wrap img {
-  width: 100%; height: 100%; object-fit: cover; object-position: center top;
-  display: block; transition: transform .55s ease;
-}
-.mp-card:hover .mp-img-wrap img { transform: scale(1.04); }
-.mp-img-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(10,25,41,.85) 0%, rgba(10,25,41,.05) 55%, transparent 100%);
-}
-.mp-img-label {
-  position: absolute; top: 1rem; left: 1rem;
-  font-size: .58rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
-  background: var(--gold); color: var(--white); padding: .28rem .8rem;
-}
-.mp-img-type {
-  position: absolute; bottom: 1rem; right: 1rem;
-  font-size: .58rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-  background: rgba(10,25,41,.82); backdrop-filter: blur(6px);
-  color: var(--gold-lt); padding: .26rem .7rem;
-}
-.mp-body { padding: 1.75rem; }
-.mp-location {
-  display: flex; align-items: center; gap: .35rem;
-  font-size: .67rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--teal-lt); margin-bottom: .5rem;
-}
-.mp-title {
-  font-family: var(--ff-serif); font-size: 1.35rem; color: var(--white);
-  margin-bottom: .65rem; line-height: 1.2;
-}
-.mp-desc { font-size: .83rem; color: rgba(255,255,255,.5); font-weight: 300; line-height: 1.78; margin-bottom: 1.25rem; }
-.mp-managed-by {
-  display: flex; align-items: center; gap: .6rem;
-  padding: .75rem 1rem; background: rgba(184,146,46,.07);
-  border-left: 2px solid var(--gold); margin-bottom: 1.25rem;
-}
-.mp-managed-by span { font-size: .68rem; font-weight: 600; letter-spacing: .08em; color: var(--gold-lt); }
-.mp-services { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; }
-.mp-svc {
-  display: flex; align-items: center; gap: .4rem;
-  font-size: .72rem; color: rgba(255,255,255,.42); font-weight: 300;
-}
-.mp-svc::before {
-  content: ''; width: 4px; height: 4px; border-radius: 50%;
-  background: var(--gold); opacity: .65; flex-shrink: 0;
-}
-.mp-cta-bar {
-  margin-top: 3rem; text-align: center; padding: 2rem;
-  border: 1px solid rgba(184,146,46,.15); background: rgba(184,146,46,.04);
-}
-.mp-cta-bar p { font-size: .88rem; color: rgba(255,255,255,.45); font-weight: 300; line-height: 1.75; margin-bottom: 1.25rem; }
-.mp-cta-bar p strong { display: block; font-family: var(--ff-serif); font-size: 1.3rem; color: var(--white); font-weight: 400; margin-bottom: .35rem; }
-@media (max-width: 900px) { .mp-grid { grid-template-columns: 1fr; } }
-@media (max-width: 480px) { .mp-img-wrap { height: 240px; } .mp-services { grid-template-columns: 1fr; } }
-
-/* ═══════════════════════════
-   FOOTER
-═══════════════════════════ */
-footer { background: #030C17; padding: 4rem 0 2rem; border-top: 1px solid rgba(184,146,46,.1); }
-.footer-grid {
-  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem;
-  padding-bottom: 2.75rem; border-bottom: 1px solid rgba(255,255,255,.04);
-}
-.ft-brand p { font-size: .78rem; color: rgba(255,255,255,.3); font-weight: 300; line-height: 1.8; margin-top: .9rem; max-width: 250px; }
-.ft-col h4 { font-size: .6rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 1.1rem; }
-.ft-col ul { display: flex; flex-direction: column; gap: .5rem; }
-.ft-col ul a { font-size: .78rem; color: rgba(255,255,255,.33); transition: color .25s; font-weight: 300; }
-.ft-col ul a:hover { color: var(--gold-lt); }
-.ft-bottom {
-  padding-top: 1.75rem;
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
-}
-.ft-bottom p  { font-size: .7rem; color: rgba(255,255,255,.2); }
-.ft-bottom a  { color: var(--gold); transition: color .25s; }
-.ft-bottom a:hover { color: var(--gold-lt); }
-
-/* ═══════════════════════════
-   WHATSAPP FLOAT
-═══════════════════════════ */
-.wa-float {
-  position: fixed; bottom: 1.75rem; right: 1.75rem; z-index: 800;
-  width: 54px; height: 54px; border-radius: 50%;
-  background: var(--green-wa); display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 4px 18px rgba(37,211,102,.38); transition: transform .3s;
-}
-.wa-float:hover { transform: scale(1.08); }
-.wa-float svg { width: 26px; height: 26px; fill: white; }
-
-/* ═══════════════════════════
-   RESPONSIVE
-═══════════════════════════ */
-@media (max-width: 1024px) {
-  .hero-inner   { grid-template-columns: 1fr; }
-  .hero-card    { display: none; }
-  .svc-grid     { grid-template-columns: 1fr 1fr; }
-  .prop-grid    { grid-template-columns: 1fr 1fr; }
-  .about-grid, .why-grid, .dev-grid, .mgmt-grid, .contact-grid
-                { grid-template-columns: 1fr; gap: 3rem; }
-  .about-pill, .dev-pull { display: none; }
-  .areas-grid   { grid-template-columns: 1fr 1fr; }
-  .invest-grid  { grid-template-columns: 1fr 1fr; }
-  .testi-grid   { grid-template-columns: 1fr 1fr; }
-  .footer-grid  { grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .cta-inner    { grid-template-columns: 1fr; gap: 2rem; }
-  .cta-btns     { flex-direction: row; min-width: auto; }
-  .why-visual   { order: -1; }
-}
-@media (max-width: 768px) {
-  .nav-links, .nav-right .btn-gold { display: none; }
-  .hamburger    { display: flex; }
-  .hero-stats-inner { grid-template-columns: 1fr 1fr; }
-  .h-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.05); }
-  .svc-grid     { grid-template-columns: 1fr; }
-  .prop-grid    { grid-template-columns: 1fr; }
-  .areas-grid   { grid-template-columns: 1fr; }
-  .invest-grid  { grid-template-columns: 1fr; }
-  .testi-grid   { grid-template-columns: 1fr; }
-  .about-values { grid-template-columns: 1fr; }
-  .mgmt-feats   { grid-template-columns: 1fr; }
-  .footer-grid  { grid-template-columns: 1fr; }
-  .ft-bottom    { flex-direction: column; text-align: center; }
-  .f-row        { grid-template-columns: 1fr; }
-  .why-img, .mgmt-img, .dev-img { height: 280px; }
-  .about-img    { height: 300px; }
-}
-@media (max-width: 480px) {
-  section { padding: 3.5rem 0; }
-  .hero-btns { flex-direction: column; }
-  .hero-btns .btn { text-align: center; justify-content: center; }
-  .trust-list { gap: 1.25rem; }
-  .prop-footer-bar { flex-direction: column; align-items: flex-start; }
-  .cta-btns { flex-direction: column; }
-}
-
-/* ═══════════════════════════
-   FOCUS VISIBLE (ACCESSIBILITY)
-═══════════════════════════ */
-:focus-visible {
-  outline: 2px solid var(--gold-lt);
-  outline-offset: 3px;
-}
-a:focus-visible, button:focus-visible {
-  outline: 2px solid var(--gold-lt);
-  outline-offset: 3px;
-}
+:root{--navy:#0A1929;--navy-3:#1A3050;--teal:#1B5E6E;--teal-lt:#2A7D92;--gold:#B8922E;--gold-lt:#D4AE5A;--sand-lt:#EDE3D3;--cream:#F7F3EC;--charcoal:#2C3340;--mid:#5A6478;--white:#FFFFFF;--green-wa:#25D366;--ff-serif:'Playfair Display',Georgia,serif;--ff-sans:'DM Sans',system-ui,sans-serif;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--ff-sans);background:var(--cream);color:var(--charcoal);overflow-x:hidden;line-height:1.7;}
+img{display:block;max-width:100%;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3{font-family:var(--ff-serif);line-height:1.15;}
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:var(--navy);}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px;}
+.container{max-width:1200px;margin:0 auto;padding:0 1.5rem;}
+.skip-link{position:absolute;top:-40px;left:1rem;background:var(--gold);color:var(--white);padding:.5rem 1rem;font-size:.8rem;font-weight:600;z-index:9999;border-radius:0 0 4px 4px;transition:top .2s;}
+.skip-link:focus{top:0;}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:1rem 0;transition:all .35s;background:rgba(10,25,41,.15);backdrop-filter:blur(8px);}
+#nav.scrolled{background:rgba(10,25,41,.97);backdrop-filter:blur(20px);padding:.7rem 0;box-shadow:0 2px 40px rgba(0,0,0,.35);}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.logo img{height:56px;width:auto;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35));transition:height .3s;display:block;}
+#nav.scrolled .logo img{height:46px;}
+.nav-links{display:flex;align-items:center;gap:1.5rem;list-style:none;position:relative;}
+.nav-links>li{position:relative;}
+.nav-links a{color:rgba(255,255,255,.75);font-size:.7rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;position:relative;transition:color .25s;white-space:nowrap;}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold-lt);transition:width .25s;}
+.nav-links a:hover{color:var(--gold-lt);}
+.nav-links a:hover::after{width:100%;}
+.nav-dropdown{position:relative;}
+.nav-dropdown-toggle{color:rgba(255,255,255,.75);font-size:.7rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:.35rem;padding:0;transition:color .25s;font-family:var(--ff-sans);}
+.nav-dropdown-toggle:hover{color:var(--gold-lt);}
+.nav-dropdown-toggle svg{width:10px;height:10px;fill:currentColor;transition:transform .25s;}
+.nav-dropdown.open .nav-dropdown-toggle svg{transform:rotate(180deg);}
+.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 12px);left:0;background:rgba(10,25,41,.98);backdrop-filter:blur(20px);border:1px solid rgba(184,146,46,.2);min-width:200px;padding:.5rem 0;z-index:100;}
+.nav-dropdown.open .nav-dropdown-menu{display:block;}
+.nav-dropdown-menu a{display:block;padding:.6rem 1.25rem;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.65);transition:all .2s;}
+.nav-dropdown-menu a:hover{background:rgba(184,146,46,.08);color:var(--gold-lt);padding-left:1.5rem;}
+.nav-dropdown-menu a::after{display:none!important;}
+.nav-right{display:flex;align-items:center;gap:.75rem;}
+.nav-wa{display:flex;align-items:center;gap:.4rem;font-size:.67rem;font-weight:600;color:rgba(255,255,255,.55);transition:color .25s;}
+.nav-wa:hover{color:var(--green-wa);}
+.nav-wa svg{width:15px;height:15px;fill:var(--green-wa);flex-shrink:0;}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.82rem 1.9rem;font-family:var(--ff-sans);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:none;border-radius:2px;cursor:pointer;transition:background .3s,color .3s;}
+.btn-gold{background:var(--gold);color:var(--white);}
+.btn-gold:hover{background:#a07828;}
+.btn-sm{padding:.55rem 1.2rem;font-size:.65rem;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
+.hamburger span{display:block;width:22px;height:1.5px;background:rgba(255,255,255,.8);transition:.3s;}
+#mobile-nav{display:none;position:fixed;inset:0;z-index:890;background:rgba(10,25,41,.98);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:1.75rem;}
+#mobile-nav.open{display:flex;}
+#mobile-nav a{font-family:var(--ff-serif);font-size:1.6rem;font-weight:600;color:rgba(255,255,255,.75);transition:color .25s;}
+#mobile-nav a:hover{color:var(--gold-lt);}
+#mobile-nav .mn-sub{display:flex;gap:1.2rem;flex-wrap:wrap;justify-content:center;margin-top:-.75rem;}
+#mobile-nav .mn-sub a{font-family:var(--ff-sans);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);}
+#mobile-nav .mn-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:rgba(255,255,255,.5);font-size:1.6rem;cursor:pointer;padding:.5rem;}
+.eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-size:.6rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem;}
+.eyebrow::before,.eyebrow::after{content:'';display:block;width:20px;height:1px;background:var(--gold);opacity:.55;}
+.breadcrumb{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1.5rem;}
+.breadcrumb a{color:rgba(255,255,255,.4);transition:color .25s;}
+.breadcrumb a:hover{color:var(--gold-lt);}
+.breadcrumb span{color:var(--gold-lt);}
+.breadcrumb-sep{color:rgba(255,255,255,.2);}
+.page-hero{background:var(--navy);padding:7rem 0 3.5rem;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1400&q=60') center/cover no-repeat;opacity:.08;}
+.page-hero-inner{position:relative;z-index:1;}
+.page-hero h1{font-size:clamp(2rem,4vw,3.2rem);color:var(--white);margin-bottom:.75rem;}
+.page-hero p{font-size:.95rem;color:rgba(255,255,255,.55);font-weight:300;max-width:540px;line-height:1.8;}
+.filter-wrap{background:var(--white);border-bottom:1px solid rgba(184,146,46,.12);padding:1.1rem 0;position:sticky;top:62px;z-index:50;}
+.filter-inner{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;}
+.filter-label{font-size:.62rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);margin-right:.35rem;}
+.pf{padding:.42rem 1.1rem;border:1px solid rgba(10,25,41,.18);background:transparent;color:var(--mid);font-size:.65rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .25s;font-family:var(--ff-sans);border-radius:2px;}
+.pf.active,.pf:hover{background:var(--navy);color:var(--white);border-color:var(--navy);}
+.section{padding:3rem 0 5rem;}
+.prop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;}
+.prop-card{background:var(--white);overflow:hidden;border:1px solid rgba(184,146,46,.1);display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s;}
+.prop-card:hover{transform:translateY(-5px);box-shadow:0 20px 55px rgba(10,25,41,.11);}
+.prop-card.hidden{display:none;}
+.prop-img{height:215px;position:relative;overflow:hidden;flex-shrink:0;display:block;}
+.prop-img-inner{width:100%;height:100%;background-size:cover;background-position:center;transition:transform .5s;}
+.prop-card:hover .prop-img-inner{transform:scale(1.05);}
+.prop-tag{position:absolute;top:.8rem;left:.8rem;font-size:.58rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;padding:.28rem .75rem;}
+.tag-sale{background:var(--navy);color:var(--white);}
+.tag-rent{background:var(--teal);color:var(--white);}
+.tag-offplan{background:var(--gold);color:var(--white);}
+.tag-invest{background:var(--charcoal);color:var(--white);}
+.tag-holiday{background:var(--teal-lt);color:var(--white);}
+.prop-type{position:absolute;bottom:.8rem;right:.8rem;background:rgba(10,25,41,.82);backdrop-filter:blur(6px);font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-lt);padding:.26rem .65rem;}
+.prop-body{padding:1.3rem 1.4rem 1.4rem;display:flex;flex-direction:column;flex:1;}
+.prop-loc{font-size:.67rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--teal-lt);margin-bottom:.4rem;}
+.prop-title{font-family:var(--ff-serif);font-size:1.05rem;color:var(--navy);margin-bottom:.4rem;}
+.prop-desc{font-size:.8rem;color:var(--mid);font-weight:300;line-height:1.65;margin-bottom:.9rem;flex:1;}
+.prop-specs{display:flex;gap:1rem;flex-wrap:wrap;padding:.75rem 0;border-top:1px solid var(--sand-lt);border-bottom:1px solid var(--sand-lt);margin-bottom:.9rem;}
+.prop-spec{font-size:.7rem;color:var(--mid);}
+.prop-foot{display:flex;align-items:flex-end;justify-content:space-between;}
+.prop-price{font-family:var(--ff-serif);font-size:1.25rem;font-weight:600;color:var(--navy);line-height:1;}
+.prop-price small{font-family:var(--ff-sans);font-size:.62rem;color:var(--mid);font-weight:400;display:block;margin-top:2px;}
+.prop-enquire{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);transition:gap .25s;}
+.results-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;}
+.results-count{font-size:.8rem;color:var(--mid);font-weight:300;}
+.results-count strong{color:var(--navy);font-weight:600;}
+footer{background:#030C17;padding:4rem 0 2rem;border-top:1px solid rgba(184,146,46,.1);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:2.75rem;border-bottom:1px solid rgba(255,255,255,.04);}
+.ft-brand p{font-size:.78rem;color:rgba(255,255,255,.3);font-weight:300;line-height:1.8;margin-top:.9rem;max-width:250px;}
+.ft-col h4{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.1rem;}
+.ft-col ul{display:flex;flex-direction:column;gap:.5rem;}
+.ft-col ul a{font-size:.78rem;color:rgba(255,255,255,.33);transition:color .25s;font-weight:300;}
+.ft-col ul a:hover{color:var(--gold-lt);}
+.ft-bottom{padding-top:1.75rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+.ft-bottom p{font-size:.7rem;color:rgba(255,255,255,.2);}
+.ft-bottom a{color:var(--gold);}
+.wa-float{position:fixed;bottom:1.75rem;right:1.75rem;z-index:800;width:54px;height:54px;border-radius:50%;background:var(--green-wa);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(37,211,102,.38);transition:transform .3s;}
+.wa-float:hover{transform:scale(1.08);}
+.wa-float svg{width:26px;height:26px;fill:white;}
+.cta-bar{margin-top:3rem;background:var(--navy);padding:2rem 2.25rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;}
+.cta-bar strong{font-family:var(--ff-serif);display:block;font-size:1.3rem;color:var(--white);margin-bottom:.3rem;}
+.cta-bar p{font-size:.88rem;color:rgba(255,255,255,.5);font-weight:300;}
+@media(max-width:1024px){.prop-grid{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}}
+@media(max-width:768px){.nav-links,.nav-right .btn-gold{display:none;}.hamburger{display:flex;}.prop-grid{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr;}.ft-bottom{flex-direction:column;text-align:center;}.filter-wrap{top:58px;}.cta-bar{flex-direction:column;}}
 </style>
 </head>
-
 <body>
-<!-- Skip to main content -->
 <a class="skip-link" href="#main">Skip to main content</a>
-
-<!-- ══════════════════════════════
-     MOBILE NAV OVERLAY
-══════════════════════════════ -->
-<div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation menu">
-  <button class="mn-close" onclick="closeMobile()" aria-label="Close menu">✕</button>
-  <a href="#about"      onclick="closeMobile()">About</a>
-  <a href="#services"   onclick="closeMobile()">Services</a>
-  <a href="#properties" onclick="closeMobile()">Properties</a>
-  <a href="#areas"      onclick="closeMobile()">Locations</a>
-  <a href="#contact"    onclick="closeMobile()">Contact</a>
-</div>
-
-<!-- ══════════════════════════════
-     NAVIGATION
-══════════════════════════════ -->
-<nav id="nav" role="navigation" aria-label="Main navigation">
-  <div class="container">
-    <div class="nav-wrap">
-      <a href="#hero" class="logo" aria-label="Azurite Properties Ltd — Home">
-        <img src="logo.jpeg" alt="Azurite Properties Ltd" style="height:48px;width:auto;display:block;object-fit:contain;">
-      </a>
-      <ul class="nav-links" role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#properties">Properties</a></li>
-        <li><a href="#areas">Locations</a></li>
-        <li><a href="#developer">Developers</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-right">
-        <a href="https://wa.me/254117721700" target="_blank" rel="noopener noreferrer"
-           class="nav-wa" aria-label="WhatsApp Azurite Properties">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          WhatsApp
-        </a>
-        <a href="#contact" class="btn btn-gold">Book Consultation</a>
-        <button class="hamburger" onclick="openMobile()" aria-label="Open navigation menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
+<div id="mobile-nav">
+  <button class="mn-close" onclick="closeMobile()">&#10005;</button>
+  <a href="../" onclick="closeMobile()">Home</a>
+  <a href="../properties/" onclick="closeMobile()" style="color:var(--gold-lt)">Properties</a>
+  <div class="mn-sub">
+    <a href="../properties/off-plan/">Off-Plan</a>
+    <a href="../properties/for-sale/">For Sale</a>
+    <a href="../properties/for-rent/">For Rent</a>
+    <a href="../properties/investment/">Investment</a>
+    <a href="../properties/holiday-stays/">Holiday Stays</a>
   </div>
+  <a href="../managed-properties/" onclick="closeMobile()">Managed Properties</a>
+  <a href="../#about" onclick="closeMobile()">About</a>
+  <a href="../#contact" onclick="closeMobile()">Contact</a>
+</div>
+<nav id="nav">
+  <div class="container"><div class="nav-wrap">
+    <a href="../" class="logo" aria-label="Azurite Properties Ltd"><img src="../logo.jpeg" alt="Azurite Properties Ltd"></a>
+    <ul class="nav-links">
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-toggle">Properties <svg viewBox="0 0 10 6"><path d="M0 0l5 6 5-6z"/></svg></button>
+        <div class="nav-dropdown-menu">
+          <a href="../properties/">All Properties</a>
+          <a href="../properties/off-plan/">Off-Plan</a>
+          <a href="../properties/for-sale/">For Sale</a>
+          <a href="../properties/for-rent/">For Rent</a>
+          <a href="../properties/investment/">Investment</a>
+          <a href="../properties/holiday-stays/">Holiday Stays</a>
+        </div>
+      </li>
+      <li><a href="../managed-properties/">Managed Properties</a></li>
+      <li><a href="../#about">About</a></li>
+      <li><a href="../#services">Services</a></li>
+      <li><a href="../#areas">Locations</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://wa.me/254117721700" target="_blank" rel="noopener noreferrer" class="nav-wa">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp
+      </a>
+      <a href="../#contact" class="btn btn-gold btn-sm">Book Consultation</a>
+      <button class="hamburger" onclick="openMobile()"><span></span><span></span><span></span></button>
+    </div>
+  </div></div>
 </nav>
 
-<!-- ══════════════════════════════
-     HERO
-══════════════════════════════ -->
 <main id="main">
-<section id="hero" aria-label="Hero">
-  <div class="hero-bg" role="img" aria-label="Coastal high-rise apartments in Mombasa"></div>
-  <div class="hero-overlay" aria-hidden="true"></div>
-
-  <!-- WATERMARK LOGO — fades as you scroll -->
-  <div id="hero-watermark" aria-hidden="true" style="
-    position:absolute;
-    top:50%;left:50%;
-    transform:translate(-50%,-50%);
-    z-index:2;
-    pointer-events:none;
-    transition:opacity .4s ease;
-  ">
-    <img src="logo.jpeg" alt="" style="
-      width:clamp(280px,38vw,520px);
-      height:auto;
-      opacity:.08;
-      filter:grayscale(20%) brightness(2.5);
-      display:block;
-    ">
-  </div>
-  <div class="hero-body">
-    <div class="hero-inner">
-      <div class="hero-left">
-        <div class="eyebrow">Mombasa · Nyali · Diani · Vipingo · Kenya Coast</div>
-        <h1 class="hero-h1">
-          Real Estate Services<br>on the <em>Kenyan Coast</em>
-        </h1>
-        <p class="hero-sub">
-          Azurite Properties Ltd handles property management, sales, lettings, and real estate marketing across Mombasa and the wider Coast region. We work directly with property owners, buyers, tenants, and developers.
-        </p>
-        <div class="hero-btns">
-          <a href="#contact" class="btn btn-gold">Book a Consultation</a>
-          <a href="#properties" class="btn btn-outline-w">View Properties</a>
-        </div>
-      </div>
-      <!-- Featured listing card — update when a live listing is available -->
-      <div class="hero-card" aria-label="Featured listing">
-        <div class="hero-card-tag">Featured Listing</div>
-        <div class="hero-card-title">Azure Heights — Nyali</div>
-        <div class="hero-card-loc">📍 Links Road, Nyali · 3-Bed Penthouse</div>
-        <div class="hero-card-price">
-          KES 24.5M
-          <small>Freehold · 1,950 sq ft · Sea Views</small>
-        </div>
-        <a href="#contact" class="hero-card-cta">Enquire About This Property</a>
-      </div>
-    </div>
-    <div class="hero-stats" aria-label="Company figures">
-      <div class="hero-stats-inner">
-        <div class="h-stat">
-          <div class="h-stat-n">200+</div>
-          <div class="h-stat-l">Properties Managed</div>
-        </div>
-        <div class="h-stat">
-          <div class="h-stat-n">12+</div>
-          <div class="h-stat-l">Coastal Locations</div>
-        </div>
-        <div class="h-stat">
-          <div class="h-stat-n">6+</div>
-          <div class="h-stat-l">Years Active</div>
-        </div>
-        <div class="h-stat">
-          <div class="h-stat-n">24h</div>
-          <div class="h-stat-l">WhatsApp Response</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ TRUST BAR ══ -->
-<div id="trust" role="complementary" aria-label="Credentials">
-  <div class="container">
-    <ul class="trust-list" role="list">
-      <li class="trust-item">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.4 6.6H19l-5.5 4 2.1 6.6L10 14l-5.6 4.2L6.5 11.6 1 7.6h6.6z"/></svg>
-        Licensed Real Estate Agency
-      </li>
-      <li class="trust-item">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.4 6.6H19l-5.5 4 2.1 6.6L10 14l-5.6 4.2L6.5 11.6 1 7.6h6.6z"/></svg>
-        Kenya Coast Specialists
-      </li>
-      <li class="trust-item">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.4 6.6H19l-5.5 4 2.1 6.6L10 14l-5.6 4.2L6.5 11.6 1 7.6h6.6z"/></svg>
-        Property Management Professionals
-      </li>
-      <li class="trust-item">
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.4 6.6H19l-5.5 4 2.1 6.6L10 14l-5.6 4.2L6.5 11.6 1 7.6h6.6z"/></svg>
-        Diaspora &amp; Investor Friendly
-      </li>
-    </ul>
+<div class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a><span class="breadcrumb-sep">&#8250;</span><span>All Properties</span>
+    </nav>
+    <div class="eyebrow" style="color:var(--gold-lt)">Mombasa &amp; Kenya Coast</div>
+    <h1>All Available Properties</h1>
+    <p>Browse our full portfolio across the Kenya Coast. Contact us about any listing or to ask about properties not shown here.</p>
   </div>
 </div>
 
-<!-- ══ ABOUT ══ -->
-<section id="about" aria-labelledby="about-h2">
+<div class="filter-wrap">
   <div class="container">
-    <div class="about-grid">
-      <div class="about-visual">
-        <div class="about-frame" aria-hidden="true"></div>
-        <div class="about-img" role="img" aria-label="Modern interior of a managed property on the Kenya Coast"></div>
-        <div class="about-pill" aria-hidden="true">
-          <div class="n">6+</div>
-          <div class="l">Years Operating</div>
-        </div>
-      </div>
-      <div class="about-text">
-        <div class="eyebrow">About Us</div>
-        <h2 id="about-h2" class="section-title">A Mombasa-Based Real Estate Company You Can Reach</h2>
-        <p>Azurite Properties Ltd is based in Tudor, Mombasa, and has been operating across the Kenya Coast since 2018. We manage residential and commercial properties, assist buyers and sellers, handle lettings, and provide marketing support for developers.</p>
-        <p>We work with property owners who live locally and those based abroad. Our office is reachable by phone, email, and WhatsApp. We respond to all enquiries within one working day.</p>
-        <p>We do not claim to be the largest agency on the Coast. We do claim to be straightforward, responsive, and properly focused on getting results for the people we work with.</p>
-        <div class="about-values" role="list">
-          <div class="about-val" role="listitem">Clear Communication</div>
-          <div class="about-val" role="listitem">Local Market Knowledge</div>
-          <div class="about-val" role="listitem">Documented Processes</div>
-          <div class="about-val" role="listitem">Accessible Team</div>
-        </div>
-        <div style="margin-top:1.75rem">
-          <a href="#contact" class="btn btn-navy">Speak With Our Team</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ SERVICES ══ -->
-<section id="services" aria-labelledby="services-h2">
-  <div class="container">
-    <div class="sec-head">
-      <div class="eyebrow" style="color:var(--gold-lt)">What We Do</div>
-      <h2 id="services-h2" class="section-title">Our Core Services</h2>
-      <p class="section-lead">We offer five clearly defined service areas. Each one has a defined scope, a point of contact, and a clear process.</p>
-    </div>
-    <div class="svc-grid">
-      <article class="svc-card">
-        <div class="svc-n" aria-hidden="true">01</div>
-        <div class="svc-icon" aria-hidden="true">🏢</div>
-        <h3>Property Management</h3>
-        <p>We manage residential and commercial properties on behalf of owners. This includes tenant sourcing, rent collection, maintenance coordination, and monthly financial reporting. Owners receive a statement every month.</p>
-        <a href="#management" class="svc-link">See How It Works →</a>
-      </article>
-      <article class="svc-card">
-        <div class="svc-n" aria-hidden="true">02</div>
-        <div class="svc-icon" aria-hidden="true">🏠</div>
-        <h3>Property Sales</h3>
-        <p>We assist sellers and buyers through the full transaction process — valuation, listing, viewings, negotiation, and documentation support. We do not charge buyers a fee; our commission is agreed with sellers upfront.</p>
-        <a href="#contact" class="svc-link">List Your Property →</a>
-      </article>
-      <article class="svc-card">
-        <div class="svc-n" aria-hidden="true">03</div>
-        <div class="svc-icon" aria-hidden="true">🔑</div>
-        <h3>Lettings</h3>
-        <p>We find tenants for landlords and help tenants find suitable rental homes. This includes advertising, viewings, tenant referencing, tenancy agreements, and handover. Long and short-stay lettings handled.</p>
-        <a href="#contact" class="svc-link">Enquire About Lettings →</a>
-      </article>
-      <article class="svc-card">
-        <div class="svc-n" aria-hidden="true">04</div>
-        <div class="svc-icon" aria-hidden="true">📊</div>
-        <h3>Real Estate Marketing</h3>
-        <p>For property owners and developers who need their properties marketed professionally. We provide photography guidance, listing creation, digital advertising, and distribution to our buyer and tenant database.</p>
-        <a href="#contact" class="svc-link">Get a Marketing Quote →</a>
-      </article>
-      <article class="svc-card">
-        <div class="svc-n" aria-hidden="true">05</div>
-        <div class="svc-icon" aria-hidden="true">🏗️</div>
-        <h3>Developer Support</h3>
-        <p>We support developers launching residential or mixed-use projects on the Coast. Services include sales strategy, off-plan buyer outreach, project marketing, and buyer pipeline management through to completion.</p>
-        <a href="#developer" class="svc-link">Developer Information →</a>
-      </article>
-      <article class="svc-card" style="background:rgba(184,146,46,.06);border-color:rgba(184,146,46,.18)">
-        <div style="padding:.5rem 0">
-          <div class="eyebrow" style="color:var(--gold-lt)">Get Started</div>
-          <h3 style="color:var(--gold-lt);font-size:1.4rem;margin-bottom:.65rem">Not sure which service fits?</h3>
-          <p style="color:rgba(255,255,255,.42);margin-bottom:1.75rem;font-size:.85rem">Call or WhatsApp us and describe your situation. We will tell you honestly what we can help with.</p>
-          <a href="#contact" class="btn btn-gold">Contact Us</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ══ FEATURED PROPERTIES ══ -->
-<section id="properties" aria-labelledby="properties-h2">
-  <div class="container">
-    <div class="sec-head sec-head-light">
-      <div class="eyebrow">Current Listings</div>
-      <h2 id="properties-h2" class="section-title">Featured Properties</h2>
-      <p class="section-lead">A selection of properties currently available across the Coast. Contact us for full details on any listing, or to ask about properties not shown here.</p>
-    </div>
-
-    <div class="prop-filters" role="group" aria-label="Filter properties by status">
+    <div class="filter-inner">
+      <span class="filter-label">Filter:</span>
       <button class="pf active" data-filter="all">All</button>
+      <button class="pf" data-filter="offplan">Off-Plan</button>
       <button class="pf" data-filter="sale">For Sale</button>
       <button class="pf" data-filter="rent">For Rent</button>
-      <button class="pf" data-filter="offplan">Off-Plan</button>
       <button class="pf" data-filter="invest">Investment</button>
+      <button class="pf" data-filter="holiday">Holiday Stays</button>
     </div>
+  </div>
+</div>
 
-    <div class="prop-grid" role="list">
+<section class="section">
+  <div class="container">
+    <div class="results-bar">
+      <p class="results-count">Showing <strong id="count">9</strong> properties</p>
+    </div>
+    <div class="prop-grid">
 
-      <article class="prop-card" role="listitem" data-status="offplan">
-        <div class="prop-img" aria-hidden="true">
+      <article class="prop-card" data-cat="offplan">
+        <a href="../properties/azure-heights-nyali/" class="prop-img">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=700&q=80')"></div>
-          <div class="prop-tag tag-offplan">Off-Plan</div>
-          <div class="prop-type">Penthouse Apartment</div>
-        </div>
+          <div class="prop-tag tag-offplan">Off-Plan</div><div class="prop-type">Penthouse Apartment</div>
+        </a>
         <div class="prop-body">
-          <div class="prop-loc" aria-label="Location: Links Road, Nyali">
-            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>
-            Links Road, Nyali
-          </div>
-          <h3 class="prop-title">Azure Heights — 3-Bed Penthouse</h3>
-          <p class="prop-desc">Off-plan penthouse in a high-rise development on Links Road. Italian-fitted kitchen, floor-to-ceiling glazing, rooftop access, and community pool. Structured payment plan available.</p>
-          <div class="prop-specs" aria-label="Property details">
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6h16v2H2zm0 4h16v2H2zm0 4h10v2H2z"/></svg>3 Beds</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M17 8H3a1 1 0 00-1 1v8h16V9a1 1 0 00-1-1z"/></svg>2 Baths</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h16v16H2z"/></svg>1,950 sq ft</span>
-          </div>
-          <div class="prop-foot">
-            <div class="prop-price">KES 24.5M <small>Freehold · Payment plan available</small></div>
-            <a href="#contact" class="prop-enquire" aria-label="Enquire about Azure Heights">Enquire <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3l7 7-7 7M3 10h14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-          </div>
+          <div class="prop-loc">&#9679; Links Road, Nyali</div>
+          <h3 class="prop-title"><a href="../properties/azure-heights-nyali/" style="color:inherit">Azure Heights — 3-Bed Penthouse</a></h3>
+          <p class="prop-desc">Off-plan penthouse on Links Road. Italian-fitted kitchen, floor-to-ceiling glazing, rooftop access, community pool. Payment plan available.</p>
+          <div class="prop-specs"><span class="prop-spec">3 Beds</span><span class="prop-spec">2 Baths</span><span class="prop-spec">1,950 sq ft</span></div>
+          <div class="prop-foot"><div class="prop-price">KES 24.5M<small>Freehold · Payment plan available</small></div><a href="../properties/azure-heights-nyali/" class="prop-enquire">View &#8594;</a></div>
         </div>
       </article>
 
-      <article class="prop-card" role="listitem" data-status="sale">
-        <div class="prop-img" aria-hidden="true">
+      <article class="prop-card" data-cat="sale">
+        <a href="../properties/diani-palms-garden-villa/" class="prop-img">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=700&q=80')"></div>
-          <div class="prop-tag tag-sale">For Sale</div>
-          <div class="prop-type">Private Villa</div>
-        </div>
+          <div class="prop-tag tag-sale">For Sale</div><div class="prop-type">Private Villa</div>
+        </a>
         <div class="prop-body">
-          <div class="prop-loc" aria-label="Location: Diani Beach, South Coast">
-            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>
-            Diani Beach, South Coast
-          </div>
-          <h3 class="prop-title">Diani Palms — 4-Bed Garden Villa</h3>
-          <p class="prop-desc">Villa with private pool, mature garden, open-plan living areas, and 200m beach access. Four bedrooms all ensuite. Full title deed. Viewings available by appointment.</p>
-          <div class="prop-specs">
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6h16v2H2zm0 4h16v2H2zm0 4h10v2H2z"/></svg>4 Beds</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M17 8H3a1 1 0 00-1 1v8h16V9a1 1 0 00-1-1z"/></svg>4 Baths</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h16v16H2z"/></svg>3,400 sq ft</span>
-          </div>
-          <div class="prop-foot">
-            <div class="prop-price">KES 48M <small>Freehold · Price negotiable</small></div>
-            <a href="#contact" class="prop-enquire" aria-label="Enquire about Diani Palms villa">Enquire <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3l7 7-7 7M3 10h14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-          </div>
+          <div class="prop-loc">&#9679; Diani Beach, South Coast</div>
+          <h3 class="prop-title"><a href="../properties/diani-palms-garden-villa/" style="color:inherit">Diani Palms — 4-Bed Garden Villa</a></h3>
+          <p class="prop-desc">Villa with private pool, mature garden, and 200m beach access. Four bedrooms all ensuite. Full title deed. Viewings by appointment.</p>
+          <div class="prop-specs"><span class="prop-spec">4 Beds</span><span class="prop-spec">4 Baths</span><span class="prop-spec">3,400 sq ft</span></div>
+          <div class="prop-foot"><div class="prop-price">KES 48M<small>Freehold · Price negotiable</small></div><a href="../properties/diani-palms-garden-villa/" class="prop-enquire">View &#8594;</a></div>
         </div>
       </article>
 
-      <article class="prop-card" role="listitem" data-status="rent">
-        <div class="prop-img" aria-hidden="true">
+      <article class="prop-card" data-cat="rent">
+        <a href="../properties/kizingo-premier-executive-apartment/" class="prop-img">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=700&q=80')"></div>
-          <div class="prop-tag tag-rent">For Rent</div>
-          <div class="prop-type">Furnished Apartment</div>
-        </div>
+          <div class="prop-tag tag-rent">For Rent</div><div class="prop-type">Furnished Apartment</div>
+        </a>
         <div class="prop-body">
-          <div class="prop-loc"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>Kizingo, Mombasa Island</div>
-          <h3 class="prop-title">Kizingo Premier — 3-Bed Executive Apt</h3>
-          <p class="prop-desc">Fully furnished apartment in a managed building. Includes manned reception, generator backup, fibre internet, servant quarter, and covered parking. Suitable for corporate tenants and expat families.</p>
-          <div class="prop-specs">
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6h16v2H2zm0 4h16v2H2zm0 4h10v2H2z"/></svg>3 Beds</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M17 8H3a1 1 0 00-1 1v8h16V9a1 1 0 00-1-1z"/></svg>2 Baths</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h16v16H2z"/></svg>1,600 sq ft</span>
-          </div>
-          <div class="prop-foot">
-            <div class="prop-price">KES 150K <small>Per month · Fully furnished</small></div>
-            <a href="#contact" class="prop-enquire">Enquire <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3l7 7-7 7M3 10h14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-          </div>
+          <div class="prop-loc">&#9679; Kizingo, Mombasa Island</div>
+          <h3 class="prop-title"><a href="../properties/kizingo-premier-executive-apartment/" style="color:inherit">Kizingo Premier — 3-Bed Executive Apt</a></h3>
+          <p class="prop-desc">Fully furnished. Manned reception, generator backup, fibre internet, servant quarter, covered parking. Ideal for corporate tenants and expat families.</p>
+          <div class="prop-specs"><span class="prop-spec">3 Beds</span><span class="prop-spec">2 Baths</span><span class="prop-spec">1,600 sq ft</span></div>
+          <div class="prop-foot"><div class="prop-price">KES 150K<small>Per month · Fully furnished</small></div><a href="../properties/kizingo-premier-executive-apartment/" class="prop-enquire">View &#8594;</a></div>
         </div>
       </article>
 
-      <article class="prop-card" role="listitem" data-status="offplan">
-        <div class="prop-img" aria-hidden="true">
+      <article class="prop-card" data-cat="offplan">
+        <a href="../properties/vipingo-greens-maisonette/" class="prop-img">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=700&q=80')"></div>
-          <div class="prop-tag tag-offplan">Off-Plan</div>
-          <div class="prop-type">Gated Maisonette</div>
-        </div>
+          <div class="prop-tag tag-offplan">Off-Plan</div><div class="prop-type">Gated Maisonette</div>
+        </a>
         <div class="prop-body">
-          <div class="prop-loc"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>Vipingo Ridge, Kilifi County</div>
-          <h3 class="prop-title">Vipingo Greens — 3-Bed Maisonette</h3>
-          <p class="prop-desc">Off-plan maisonettes within a gated estate. Shared amenities include clubhouse and pool. Contact us for current availability, completion timeline, and payment plan details.</p>
-          <div class="prop-specs">
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6h16v2H2zm0 4h16v2H2zm0 4h10v2H2z"/></svg>3 Beds</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M17 8H3a1 1 0 00-1 1v8h16V9a1 1 0 00-1-1z"/></svg>2 Baths</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h16v16H2z"/></svg>2,100 sq ft</span>
-          </div>
-          <div class="prop-foot">
-            <div class="prop-price">From KES 18.5M <small>Off-plan · Enquire for timeline</small></div>
-            <a href="#contact" class="prop-enquire">Enquire <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3l7 7-7 7M3 10h14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-          </div>
+          <div class="prop-loc">&#9679; Vipingo Ridge, Kilifi County</div>
+          <h3 class="prop-title"><a href="../properties/vipingo-greens-maisonette/" style="color:inherit">Vipingo Greens — 3-Bed Maisonette</a></h3>
+          <p class="prop-desc">Off-plan maisonettes in a gated estate at Vipingo Ridge. Clubhouse and pool. Contact us for availability and payment plan details.</p>
+          <div class="prop-specs"><span class="prop-spec">3 Beds</span><span class="prop-spec">2 Baths</span><span class="prop-spec">2,100 sq ft</span></div>
+          <div class="prop-foot"><div class="prop-price">From KES 18.5M<small>Off-plan · Enquire for timeline</small></div><a href="../properties/vipingo-greens-maisonette/" class="prop-enquire">View &#8594;</a></div>
         </div>
       </article>
 
-      <article class="prop-card" role="listitem" data-status="sale">
-        <div class="prop-img" aria-hidden="true">
+      <article class="prop-card" data-cat="sale">
+        <a href="../properties/nyali-estate-maisonette/" class="prop-img">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1576941089067-2de3c901e126?w=700&q=80')"></div>
-          <div class="prop-tag tag-sale">For Sale</div>
-          <div class="prop-type">Maisonette</div>
-        </div>
+          <div class="prop-tag tag-sale">For Sale</div><div class="prop-type">Maisonette</div>
+        </a>
         <div class="prop-body">
-          <div class="prop-loc"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>Nyali Estate, Mombasa North</div>
-          <h3 class="prop-title">Nyali Estate — 4-Bed All-Ensuite Maisonette</h3>
-          <p class="prop-desc">Four-bedroom all-ensuite maisonette with DSQ, double garage, borehole, perimeter wall, and 24hr security. Well-maintained. Suitable for owner-occupation or rental investment.</p>
-          <div class="prop-specs">
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6h16v2H2zm0 4h16v2H2zm0 4h10v2H2z"/></svg>4 Beds</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M17 8H3a1 1 0 00-1 1v8h16V9a1 1 0 00-1-1z"/></svg>4 Baths</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h16v16H2z"/></svg>2,800 sq ft</span>
-          </div>
-          <div class="prop-foot">
-            <div class="prop-price">KES 32M <small>Freehold · Negotiable</small></div>
-            <a href="#contact" class="prop-enquire">Enquire <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3l7 7-7 7M3 10h14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-          </div>
+          <div class="prop-loc">&#9679; Nyali Estate, Mombasa North</div>
+          <h3 class="prop-title"><a href="../properties/nyali-estate-maisonette/" style="color:inherit">Nyali Estate — 4-Bed All-Ensuite Maisonette</a></h3>
+          <p class="prop-desc">Four-bedroom all-ensuite maisonette. DSQ, double garage, borehole, perimeter wall, 24hr security. Owner-occupation or rental investment.</p>
+          <div class="prop-specs"><span class="prop-spec">4 Beds</span><span class="prop-spec">4 Baths</span><span class="prop-spec">2,800 sq ft</span></div>
+          <div class="prop-foot"><div class="prop-price">KES 32M<small>Freehold · Negotiable</small></div><a href="../properties/nyali-estate-maisonette/" class="prop-enquire">View &#8594;</a></div>
         </div>
       </article>
 
-      <article class="prop-card" role="listitem" data-status="rent">
-        <div class="prop-img" aria-hidden="true">
+      <article class="prop-card" data-cat="holiday">
+        <a href="../properties/bahari-studios-bamburi/" class="prop-img">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&q=80')"></div>
-          <div class="prop-tag tag-holiday">Holiday Let</div>
-          <div class="prop-type">Serviced Studio</div>
-        </div>
+          <div class="prop-tag tag-holiday">Holiday Let</div><div class="prop-type">Serviced Studio</div>
+        </a>
         <div class="prop-body">
-          <div class="prop-loc"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>Bamburi Beach, Mombasa North</div>
-          <h3 class="prop-title">Bahari Studios — Serviced Studio</h3>
-          <p class="prop-desc">Furnished studio in a purpose-built building near Bamburi Beach. Includes WiFi, backup generator, 24hr security, and rooftop pool access. Available for monthly and short-stay lets.</p>
-          <div class="prop-specs">
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6h16v2H2zm0 4h16v2H2zm0 4h10v2H2z"/></svg>Studio</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M17 8H3a1 1 0 00-1 1v8h16V9a1 1 0 00-1-1z"/></svg>1 Bath</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h16v16H2z"/></svg>480 sq ft</span>
-          </div>
-          <div class="prop-foot">
-            <div class="prop-price">KES 55K <small>Per month · Furnished &amp; serviced</small></div>
-            <a href="#contact" class="prop-enquire">Enquire <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3l7 7-7 7M3 10h14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-          </div>
+          <div class="prop-loc">&#9679; Bamburi Beach, Mombasa North</div>
+          <h3 class="prop-title"><a href="../properties/bahari-studios-bamburi/" style="color:inherit">Bahari Studios — Serviced Studio</a></h3>
+          <p class="prop-desc">Furnished studio near Bamburi Beach. WiFi, backup generator, 24hr security, rooftop pool access. Monthly and short-stay lets available.</p>
+          <div class="prop-specs"><span class="prop-spec">Studio</span><span class="prop-spec">1 Bath</span><span class="prop-spec">480 sq ft</span></div>
+          <div class="prop-foot"><div class="prop-price">KES 55K<small>Per month · Furnished &amp; serviced</small></div><a href="../properties/bahari-studios-bamburi/" class="prop-enquire">View &#8594;</a></div>
         </div>
       </article>
 
-      <article class="prop-card" role="listitem" data-status="invest">
-        <div class="prop-img" aria-hidden="true">
+      <article class="prop-card" data-cat="invest">
+        <a href="../properties/tudor-business-park-commercial/" class="prop-img">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&q=80')"></div>
-          <div class="prop-tag tag-invest">Investment</div>
-          <div class="prop-type">Commercial Floor</div>
-        </div>
+          <div class="prop-tag tag-invest">Investment</div><div class="prop-type">Commercial Floor</div>
+        </a>
         <div class="prop-body">
-          <div class="prop-loc"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>Tudor Road, Mombasa</div>
-          <h3 class="prop-title">Tudor Business Park — Commercial Floor</h3>
-          <p class="prop-desc">Open-plan commercial floor in a managed business park on Tudor Road. Suitable for offices, medical, or financial services. Currently generating rental income. Details on request.</p>
-          <div class="prop-specs">
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h16v16H2z"/></svg>4,200 sq ft</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6h16v2H2zm0 4h16v2H2z"/></svg>Open Plan</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1l2.4 6.6H19l-5.5 4 2.1 6.6L10 14l-5.6 4.2L6.5 11.6 1 7.6h6.6z"/></svg>Income-Generating</span>
-          </div>
-          <div class="prop-foot">
-            <div class="prop-price">KES 55M <small>Freehold · Rental income in place</small></div>
-            <a href="#contact" class="prop-enquire">Enquire <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3l7 7-7 7M3 10h14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-          </div>
+          <div class="prop-loc">&#9679; Tudor Road, Mombasa</div>
+          <h3 class="prop-title"><a href="../properties/tudor-business-park-commercial/" style="color:inherit">Tudor Business Park — Commercial Floor</a></h3>
+          <p class="prop-desc">Open-plan commercial floor on Tudor Road. Currently generating rental income. Suitable for offices, medical, or financial services.</p>
+          <div class="prop-specs"><span class="prop-spec">4,200 sq ft</span><span class="prop-spec">Open Plan</span><span class="prop-spec">Income-Generating</span></div>
+          <div class="prop-foot"><div class="prop-price">KES 55M<small>Freehold · Rental income in place</small></div><a href="../properties/tudor-business-park-commercial/" class="prop-enquire">View &#8594;</a></div>
         </div>
       </article>
 
-      <article class="prop-card" role="listitem" data-status="offplan">
-        <div class="prop-img" aria-hidden="true">
+      <article class="prop-card" data-cat="offplan">
+        <a href="../properties/harbour-crest-likoni/" class="prop-img">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&q=80')"></div>
-          <div class="prop-tag tag-offplan">Off-Plan</div>
-          <div class="prop-type">Apartment Block</div>
-        </div>
+          <div class="prop-tag tag-offplan">Off-Plan</div><div class="prop-type">Apartment Block</div>
+        </a>
         <div class="prop-body">
-          <div class="prop-loc"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>Likoni, South Coast</div>
-          <h3 class="prop-title">Harbour Crest — 2-Bed Apartments</h3>
-          <p class="prop-desc">Off-plan two-bedroom apartments in Likoni with harbour views. Community pool, covered parking. Contact us for current phase pricing and available units — timeline to be confirmed with developer.</p>
-          <div class="prop-specs">
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6h16v2H2zm0 4h16v2H2zm0 4h10v2H2z"/></svg>2 Beds</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M17 8H3a1 1 0 00-1 1v8h16V9a1 1 0 00-1-1z"/></svg>2 Baths</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h16v16H2z"/></svg>1,100 sq ft</span>
-          </div>
-          <div class="prop-foot">
-            <div class="prop-price">From KES 8.9M <small>Off-plan · Enquire for availability</small></div>
-            <a href="#contact" class="prop-enquire">Enquire <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3l7 7-7 7M3 10h14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-          </div>
+          <div class="prop-loc">&#9679; Likoni, South Coast</div>
+          <h3 class="prop-title"><a href="../properties/harbour-crest-likoni/" style="color:inherit">Harbour Crest — 2-Bed Apartments</a></h3>
+          <p class="prop-desc">Off-plan two-bedroom apartments in Likoni with harbour views. Community pool, covered parking. Contact us for current phase pricing.</p>
+          <div class="prop-specs"><span class="prop-spec">2 Beds</span><span class="prop-spec">2 Baths</span><span class="prop-spec">1,100 sq ft</span></div>
+          <div class="prop-foot"><div class="prop-price">From KES 8.9M<small>Off-plan · Enquire for availability</small></div><a href="../properties/harbour-crest-likoni/" class="prop-enquire">View &#8594;</a></div>
         </div>
       </article>
 
-      <article class="prop-card" role="listitem" data-status="rent">
-        <div class="prop-img" aria-hidden="true">
+      <article class="prop-card" data-cat="holiday">
+        <a href="../properties/shanzu-ocean-retreat/" class="prop-img">
           <div class="prop-img-inner" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=80')"></div>
-          <div class="prop-tag tag-holiday">Holiday Let</div>
-          <div class="prop-type">Beachfront Home</div>
-        </div>
+          <div class="prop-tag tag-holiday">Holiday Let</div><div class="prop-type">Beachfront Home</div>
+        </a>
         <div class="prop-body">
-          <div class="prop-loc"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>Shanzu Beach, Mombasa North</div>
-          <h3 class="prop-title">Shanzu Ocean Retreat — 3-Bed Beachfront</h3>
-          <p class="prop-desc">Three-bedroom beachfront home with private garden, rooftop deck, and direct Indian Ocean access. Short and long stays available. Managed by Azurite. Enquire for rates and availability.</p>
-          <div class="prop-specs">
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 6h16v2H2zm0 4h16v2H2zm0 4h10v2H2z"/></svg>3 Beds</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M17 8H3a1 1 0 00-1 1v8h16V9a1 1 0 00-1-1z"/></svg>2 Baths</span>
-            <span class="prop-spec"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2 2h16v16H2z"/></svg>Beachfront</span>
-          </div>
-          <div class="prop-foot">
-            <div class="prop-price">KES 18K <small>Per night · Enquire for longer stays</small></div>
-            <a href="#contact" class="prop-enquire">Enquire <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3l7 7-7 7M3 10h14" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-    </div><!-- /prop-grid -->
-
-    <div class="prop-footer-bar">
-      <div>
-        <strong>Looking for something not listed here?</strong>
-        <p>We maintain additional listings not published on this site. Tell us your requirements and we'll come back to you within one working day.</p>
-      </div>
-      <a href="#contact" class="btn btn-gold">Send Your Requirements</a>
-    </div>
-  </div>
-</section>
-
-<!-- ══ WHY AZURITE ══ -->
-<section id="why" aria-labelledby="why-h2">
-  <div class="container">
-    <div class="why-grid">
-      <div class="why-text">
-        <div class="eyebrow">Why Choose Azurite</div>
-        <h2 id="why-h2" class="section-title">What We Do Differently</h2>
-        <p>We are a focused real estate team operating in a specific geography — Mombasa and the Kenya Coast. We do not try to serve the whole country. This means our market knowledge is current, our contacts are local, and our advice is grounded in what is actually happening in this market.</p>
-        <div class="why-list">
-          <div class="why-item">
-            <div class="why-num" aria-hidden="true">01</div>
-            <div>
-              <h4>We Know This Market</h4>
-              <p>We have been working on the Coast since 2018. We know the neighbourhoods, the pricing patterns, the developers, and the landlords. That context makes a real difference when you are buying, selling, or letting.</p>
-            </div>
-          </div>
-          <div class="why-item">
-            <div class="why-num" aria-hidden="true">02</div>
-            <div>
-              <h4>Structured Property Management</h4>
-              <p>Our management process includes documented tenant agreements, monthly financial statements, and a maintenance log. You receive a report every month, not just a message when something goes wrong.</p>
-            </div>
-          </div>
-          <div class="why-item">
-            <div class="why-num" aria-hidden="true">03</div>
-            <div>
-              <h4>We Work With Diaspora Owners</h4>
-              <p>A significant portion of our clients own property on the Coast but live abroad. We handle everything on their behalf and communicate through WhatsApp, email, and video call.</p>
-            </div>
-          </div>
-          <div class="why-item">
-            <div class="why-num" aria-hidden="true">04</div>
-            <div>
-              <h4>Clear Fee Structures</h4>
-              <p>We tell you exactly what our fees are before we start. There are no unexpected deductions from your rent and no hidden service charges. Our management fee is a fixed percentage agreed in writing.</p>
-            </div>
-          </div>
-          <div class="why-item">
-            <div class="why-num" aria-hidden="true">05</div>
-            <div>
-              <h4>You Can Reach Us</h4>
-              <p>Our team is reachable by phone, WhatsApp, and email during business hours. We respond to all enquiries within one working day — usually faster.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="why-visual">
-        <div class="why-img" role="img" aria-label="Coastal property managed by Azurite Properties"></div>
-        <div class="why-badge" aria-label="200 plus properties under management">
-          <div class="n">200+</div>
-          <div class="l">Properties Managed</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ AREAS ══ -->
-<section id="areas" aria-labelledby="areas-h2">
-  <div class="areas-bg" aria-hidden="true"></div>
-  <div class="areas-inner">
-    <div class="container">
-      <div class="sec-head">
-        <div class="eyebrow" style="color:var(--gold-lt)">Where We Operate</div>
-        <h2 id="areas-h2" class="section-title">Locations We Cover</h2>
-        <p class="section-lead">We are active across the full Mombasa and Coast region. If your property is not listed below, contact us — we may still be able to help.</p>
-      </div>
-      <div class="areas-grid">
-        <div class="area-card">
-          <div class="area-icon" aria-hidden="true">🏙️</div>
-          <h3>Mombasa Island</h3>
-          <p>Kizingo, Old Town, Tudor, Ganjoni — the commercial and heritage core of the Coast.</p>
-          <div class="area-tags" aria-label="Property types">
-            <span class="area-tag">Apartments</span>
-            <span class="area-tag">Commercial</span>
-          </div>
-        </div>
-        <div class="area-card">
-          <div class="area-icon" aria-hidden="true">🌊</div>
-          <h3>Nyali &amp; Bamburi</h3>
-          <p>Mombasa's primary residential zone — apartments, maisonettes, and gated developments along the North Coast.</p>
-          <div class="area-tags">
-            <span class="area-tag">Apartments</span>
-            <span class="area-tag">Maisonettes</span>
-          </div>
-        </div>
-        <div class="area-card">
-          <div class="area-icon" aria-hidden="true">🏖️</div>
-          <h3>Shanzu &amp; Mtwapa</h3>
-          <p>Beachfront homes, serviced studios, and short-let properties in a high-tourism corridor.</p>
-          <div class="area-tags">
-            <span class="area-tag">Holiday Lets</span>
-            <span class="area-tag">Beachfront</span>
-          </div>
-        </div>
-        <div class="area-card">
-          <div class="area-icon" aria-hidden="true">🌴</div>
-          <h3>Diani Beach</h3>
-          <p>South Coast — villas, beach cottages, and boutique estate properties. High demand for holiday and long-stay lets.</p>
-          <div class="area-tags">
-            <span class="area-tag">Villas</span>
-            <span class="area-tag">Plots</span>
-          </div>
-        </div>
-        <div class="area-card">
-          <div class="area-icon" aria-hidden="true">⛳</div>
-          <h3>Vipingo Ridge</h3>
-          <p>Golf estate community in Kilifi County — off-plan and completed maisonettes, strong capital corridor.</p>
-          <div class="area-tags">
-            <span class="area-tag">Gated Estate</span>
-            <span class="area-tag">Off-Plan</span>
-          </div>
-        </div>
-        <div class="area-card">
-          <div class="area-icon" aria-hidden="true">🏗️</div>
-          <h3>Likoni &amp; South Coast</h3>
-          <p>A growing investment corridor with improving infrastructure and affordable entry points.</p>
-          <div class="area-tags">
-            <span class="area-tag">Apartments</span>
-            <span class="area-tag">Investment</span>
-          </div>
-        </div>
-        <div class="area-card">
-          <div class="area-icon" aria-hidden="true">🌿</div>
-          <h3>Kilifi &amp; Watamu</h3>
-          <p>Scenic northern Coast — land, eco-style homes, and private retreats away from urban density.</p>
-          <div class="area-tags">
-            <span class="area-tag">Land</span>
-            <span class="area-tag">Retreats</span>
-          </div>
-        </div>
-        <div class="area-card">
-          <div class="area-icon" aria-hidden="true">🌐</div>
-          <h3>Diaspora Clients</h3>
-          <p>We manage properties for owners based in the UK, US, Middle East, and across East Africa. Remote management fully supported.</p>
-          <div class="area-tags">
-            <span class="area-tag">Remote Management</span>
-            <span class="area-tag">Acquisition</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ DEVELOPER SUPPORT ══ -->
-<section id="developer" aria-labelledby="dev-h2">
-  <div class="container">
-    <div class="dev-grid">
-      <div class="dev-visual" style="position:relative">
-        <div class="dev-img" role="img" aria-label="Under-construction coastal development project"></div>
-        <div class="dev-pull">
-          <p>"A structured sales process made a significant difference to our off-plan uptake."</p>
-          <cite>— A Coast Developer (name withheld on request)</cite>
-        </div>
-      </div>
-      <div class="dev-text">
-        <div class="eyebrow">For Developers</div>
-        <h2 id="dev-h2" class="section-title">Developer &amp; Project Support</h2>
-        <p>If you are developing residential or mixed-use property on the Coast, we can support your sales and marketing process. We have worked with developers at various project scales and understand how to match buyers to off-plan units.</p>
-        <p>We do not offer construction or legal services. Our role is sales, marketing, and buyer management — from project launch through to handover.</p>
-        <div class="dev-list">
-          <div class="dev-item">
-            <div class="dev-ico" aria-hidden="true">📐</div>
-            <div>
-              <h4>Pricing &amp; Positioning</h4>
-              <p>We help you set realistic pricing and position your project clearly within the current market.</p>
-            </div>
-          </div>
-          <div class="dev-item">
-            <div class="dev-ico" aria-hidden="true">📣</div>
-            <div>
-              <h4>Off-Plan Sales Campaigns</h4>
-              <p>We run targeted campaigns to our buyer database and across digital channels to generate qualified enquiries.</p>
-            </div>
-          </div>
-          <div class="dev-item">
-            <div class="dev-ico" aria-hidden="true">👥</div>
-            <div>
-              <h4>Buyer Pipeline Management</h4>
-              <p>We manage all buyer enquiries, follow-ups, and reservations through to signed agreements.</p>
-            </div>
-          </div>
-          <div class="dev-item">
-            <div class="dev-ico" aria-hidden="true">🌍</div>
-            <div>
-              <h4>Diaspora Investor Outreach</h4>
-              <p>We reach Kenyan diaspora buyers who are actively looking for Coast investment opportunities.</p>
-            </div>
-          </div>
-        </div>
-        <a href="#contact" class="btn btn-navy">Discuss Your Project</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ PROPERTY MANAGEMENT ══ -->
-<section id="management" aria-labelledby="mgmt-h2">
-  <div class="container">
-    <div class="mgmt-grid">
-      <div class="mgmt-text">
-        <div class="eyebrow" style="color:var(--gold-lt)">Property Management</div>
-        <h2 id="mgmt-h2" class="section-title">We Manage Your Property So You Do Not Have To</h2>
-        <p>Our property management service is straightforward. We act as your local representative, handle tenants directly, coordinate maintenance, collect rent, and report to you monthly.</p>
-        <p>This service is particularly useful for owners who live outside Mombasa, are frequently travelling, or simply prefer not to be involved in the day-to-day running of their property.</p>
-        <div class="mgmt-feats">
-          <div class="mgmt-feat">
-            <div class="mgmt-feat-ico" aria-hidden="true">🔍</div>
-            <h4>Tenant Sourcing &amp; Vetting</h4>
-            <p>We advertise, vet, and reference-check all tenants before placing them in your property.</p>
-          </div>
-          <div class="mgmt-feat">
-            <div class="mgmt-feat-ico" aria-hidden="true">💰</div>
-            <h4>Rent Collection</h4>
-            <p>We collect rent on your behalf and transfer it to you on a set monthly schedule.</p>
-          </div>
-          <div class="mgmt-feat">
-            <div class="mgmt-feat-ico" aria-hidden="true">🔧</div>
-            <h4>Maintenance Coordination</h4>
-            <p>We manage all maintenance requests using our vetted contractor network.</p>
-          </div>
-          <div class="mgmt-feat">
-            <div class="mgmt-feat-ico" aria-hidden="true">📋</div>
-            <h4>Monthly Statements</h4>
-            <p>You receive a clear income and expenditure statement every month, no chasing required.</p>
-          </div>
-        </div>
-        <div style="margin-top:1.75rem">
-          <a href="#contact" class="btn btn-gold">Enquire About Management</a>
-        </div>
-      </div>
-      <div class="mgmt-visual">
-        <div class="mgmt-img" role="img" aria-label="Well-maintained rental apartment interior"></div>
-        <div class="mgmt-strip" aria-label="Management performance metrics">
-          <div class="mgmt-stat">
-            <div class="n">200+</div>
-            <div class="l">Units Managed</div>
-          </div>
-          <div class="mgmt-stat">
-            <div class="n">&lt;72h</div>
-            <div class="l">Maintenance Response Target</div>
-          </div>
-          <div class="mgmt-stat">
-            <div class="n">Monthly</div>
-            <div class="l">Financial Statements</div>
-          </div>
-          <div class="mgmt-stat">
-            <div class="n">Fixed %</div>
-            <div class="l">Management Fee — Agreed Upfront</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ MANAGED PORTFOLIO ══ -->
-<section id="managed-portfolio" aria-labelledby="mp-h2">
-  <div class="container">
-    <div class="sec-head">
-      <div class="eyebrow" style="color:var(--gold-lt)">Tudor · Mombasa · Managed Portfolio</div>
-      <h2 id="mp-h2" class="section-title">Properties We Manage &amp; Support</h2>
-      <p class="section-lead">Azurite Properties Ltd provides professional property management and operational support services for selected residential developments in Tudor, Mombasa — delivering structured oversight, maintenance coordination, resident support, and reliable day-to-day building operations.</p>
-    </div>
-
-    <div class="mp-grid">
-
-      <!-- STARSHINE -->
-      <article class="mp-card" aria-label="Starshine Apartments — managed by Azurite Properties Ltd">
-        <div class="mp-img-wrap">
-          <img src="starshine.png"
-               alt="Starshine Apartments, Tudor, Mombasa — a residential development managed by Azurite Properties Ltd"
-               loading="lazy">
-          <div class="mp-img-overlay" aria-hidden="true"></div>
-          <div class="mp-img-label">Managed Property</div>
-          <div class="mp-img-type">Residential Apartments</div>
-        </div>
-        <div class="mp-body">
-          <div class="mp-location">
-            <svg width="10" height="10" viewBox="0 0 20 20" aria-hidden="true" fill="currentColor"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>
-            Tudor, Mombasa
-          </div>
-          <h3 class="mp-title">Starshine Apartments</h3>
-          <p class="mp-desc">A well-established residential apartment development in Tudor, Mombasa. Azurite Properties Ltd provides comprehensive property management and operational support services at Starshine Apartments, ensuring a well-maintained, professionally run residential environment for all occupants.</p>
-          <div class="mp-managed-by" aria-label="Management provider">
-            <svg width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" fill="currentColor" style="color:var(--gold-lt);flex-shrink:0"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm1 11H9V9h2v4zm0-6H9V5h2v2z"/></svg>
-            <span>Property management and support services provided by Azurite Properties Ltd</span>
-          </div>
-          <div class="mp-services" aria-label="Services provided">
-            <div class="mp-svc">Property Management</div>
-            <div class="mp-svc">Maintenance Coordination</div>
-            <div class="mp-svc">Resident Support</div>
-            <div class="mp-svc">Site Operations</div>
-            <div class="mp-svc">Vendor Coordination</div>
-            <div class="mp-svc">Administrative Support</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- MOONLIGHT -->
-      <article class="mp-card" aria-label="Moonlight Luxury Residence — managed by Azurite Properties Ltd">
-        <div class="mp-img-wrap">
-          <img src="moonlight.png"
-               alt="Moonlight Luxury Residence, Tudor, Mombasa — a high-rise residential development supported by Azurite Properties Ltd"
-               loading="lazy">
-          <div class="mp-img-overlay" aria-hidden="true"></div>
-          <div class="mp-img-label">Managed Property</div>
-          <div class="mp-img-type">Luxury High-Rise</div>
-        </div>
-        <div class="mp-body">
-          <div class="mp-location">
-            <svg width="10" height="10" viewBox="0 0 20 20" aria-hidden="true" fill="currentColor"><path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1110 4.5a2.5 2.5 0 010 5z"/></svg>
-            Tudor, Mombasa
-          </div>
-          <h3 class="mp-title">Moonlight Luxury Residence</h3>
-          <p class="mp-desc">A premium high-rise residential development situated in Tudor, Mombasa. Azurite Properties Ltd delivers professional property management and building support services at Moonlight Luxury Residence — maintaining the high standards expected of a luxury residential address on the Kenya Coast.</p>
-          <div class="mp-managed-by" aria-label="Management provider">
-            <svg width="14" height="14" viewBox="0 0 20 20" aria-hidden="true" fill="currentColor" style="color:var(--gold-lt);flex-shrink:0"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm1 11H9V9h2v4zm0-6H9V5h2v2z"/></svg>
-            <span>Property management and support services provided by Azurite Properties Ltd</span>
-          </div>
-          <div class="mp-services" aria-label="Services provided">
-            <div class="mp-svc">Property Management</div>
-            <div class="mp-svc">Maintenance Coordination</div>
-            <div class="mp-svc">Resident Support</div>
-            <div class="mp-svc">Site Operations</div>
-            <div class="mp-svc">Vendor Coordination</div>
-            <div class="mp-svc">General Building Management</div>
-          </div>
+          <div class="prop-loc">&#9679; Shanzu Beach, Mombasa North</div>
+          <h3 class="prop-title"><a href="../properties/shanzu-ocean-retreat/" style="color:inherit">Shanzu Ocean Retreat — 3-Bed Beachfront</a></h3>
+          <p class="prop-desc">Beachfront home with private garden, rooftop deck, and direct Indian Ocean access. Short and long stays. Managed by Azurite Properties Ltd.</p>
+          <div class="prop-specs"><span class="prop-spec">3 Beds</span><span class="prop-spec">2 Baths</span><span class="prop-spec">Beachfront</span></div>
+          <div class="prop-foot"><div class="prop-price">KES 18K<small>Per night · Enquire for longer stays</small></div><a href="../properties/shanzu-ocean-retreat/" class="prop-enquire">View &#8594;</a></div>
         </div>
       </article>
 
     </div>
-
-    <div class="mp-cta-bar">
-      <p>
-        <strong>Looking for professional property management?</strong>
-        We provide structured management and operational support for residential developments across Mombasa and the wider Kenya Coast. Speak to our team about how we can support your property.
-      </p>
-      <a href="#contact" class="btn btn-gold"><span>Speak to Us About Property Management</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- ══ INVESTMENT ══ -->
-<section id="investment" aria-labelledby="inv-h2">
-  <div class="container">
-    <div class="sec-head sec-head-light">
-      <div class="eyebrow">Buying &amp; Investing</div>
-      <h2 id="inv-h2" class="section-title">Buying Property on the Kenya Coast</h2>
-      <p class="section-lead">Coastal property can offer both lifestyle value and rental income. Here is an honest overview of what buyers and investors should understand before committing.</p>
-    </div>
-    <div class="invest-grid">
-      <article class="invest-card">
-        <div class="invest-ico" aria-hidden="true">📈</div>
-        <h3>Capital Growth</h3>
-        <p>Property values in well-located coastal areas — particularly Nyali, Diani, and Vipingo — have generally increased over the past decade. Growth is uneven across the Coast and depends heavily on location, property condition, and title type. We recommend independent legal due diligence on all purchases.</p>
-        <div class="invest-note">
-          <strong>Our advice</strong>
-          Always verify title, check for encumbrances, and use a licensed advocate. We can recommend local legal professionals.
-        </div>
-      </article>
-      <article class="invest-card">
-        <div class="invest-ico" aria-hidden="true">🏠</div>
-        <h3>Rental Income</h3>
-        <p>Quality rental properties in Nyali, Kizingo, and Bamburi maintain consistent demand from professionals, expats, and corporate tenants. Short-let properties near the beach can earn significantly more per night but require active management. We can advise on realistic yield expectations for a specific property.</p>
-        <div class="invest-note">
-          <strong>Rental yields vary</strong>
-          Yields depend on location, furnishing level, and management quality. Ask us for a realistic estimate on a specific property.
-        </div>
-      </article>
-      <article class="invest-card">
-        <div class="invest-ico" aria-hidden="true">🌐</div>
-        <h3>Off-Plan Considerations</h3>
-        <p>Off-plan purchases can offer early-investor pricing and structured payment plans. However, they carry completion and developer risk. We only market off-plan projects from developers we have assessed directly, and we are transparent about the risks involved in any project we present.</p>
-        <div class="invest-note">
-          <strong>Do your due diligence</strong>
-          We provide information on off-plan projects we market. Independent legal review is always recommended before committing.
-        </div>
-      </article>
-    </div>
-    <div style="text-align:center;margin-top:2.75rem">
-      <a href="#contact" class="btn btn-navy">Talk to Our Team About Buying</a>
-    </div>
-  </div>
-</section>
-
-<!-- ══ TESTIMONIALS ══ -->
-<section id="testimonials" aria-labelledby="testi-h2">
-  <div class="container">
-    <div class="sec-head sec-head-light">
-      <div class="eyebrow">Client Feedback</div>
-      <h2 id="testi-h2" class="section-title">What Clients Have Said</h2>
-    </div>
-    <div class="testi-grid">
-      <article class="testi-card">
-        <div class="testi-stars" aria-label="5 stars">★ ★ ★ ★ ★</div>
-        <p class="testi-text">"I live in the UK and was worried about managing my Nyali apartment remotely. Azurite handles everything — tenant placement, rent collection, and maintenance. The monthly statements are clear and the rent arrives consistently. Very reassuring."</p>
-        <div class="testi-author">
-          <div class="testi-av" aria-hidden="true">JM</div>
-          <div>
-            <div class="testi-name">J. Mwangi</div>
-            <div class="testi-role">Property Owner · Diaspora Client · Nyali</div>
-          </div>
-        </div>
-      </article>
-      <article class="testi-card">
-        <div class="testi-stars" aria-label="5 stars">★ ★ ★ ★ ★</div>
-        <p class="testi-text">"We relocated to Mombasa for work and needed a furnished apartment quickly. Azurite found us a good option in Kizingo within a week. The process was straightforward and they were easy to reach throughout."</p>
-        <div class="testi-author">
-          <div class="testi-av" aria-hidden="true">SA</div>
-          <div>
-            <div class="testi-name">S. Andersen</div>
-            <div class="testi-role">Tenant · Expat Relocation · Kizingo</div>
-          </div>
-        </div>
-      </article>
-      <article class="testi-card">
-        <div class="testi-stars" aria-label="5 stars">★ ★ ★ ★ ★</div>
-        <p class="testi-text">"Azurite managed our off-plan sales campaign in Vipingo. They were organised, communicated well with buyers, and helped us close units faster than we had planned. Professional and straightforward to work with."</p>
-        <div class="testi-author">
-          <div class="testi-av" aria-hidden="true">HO</div>
-          <div>
-            <div class="testi-name">H. Omar</div>
-            <div class="testi-role">Property Developer · Vipingo Project</div>
-          </div>
-        </div>
-      </article>
-    </div>
-    <p class="testi-disclaimer">Testimonials are from actual clients. Names abbreviated on request. References available on request for property management enquiries.</p>
-  </div>
-</section>
-
-<!-- ══ CTA BAND ══ -->
-<section id="cta-band" aria-label="Call to action">
-  <div class="container">
-    <div class="cta-inner">
-      <div class="cta-text">
-        <div class="eyebrow" style="color:var(--gold-lt)">Get in Touch</div>
-        <h2 class="section-title">Ready to Talk About Your Property?</h2>
-        <p>Whether you want to list a property, find a tenant, buy on the Coast, or hand over management — our team can help. We will respond within one working day.</p>
-      </div>
-      <div class="cta-btns">
-        <a href="#contact" class="btn btn-white">Book Consultation</a>
-        <a href="https://wa.me/254117721700?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20real%20estate%20services." target="_blank" rel="noopener noreferrer" class="btn btn-outline-w">
-          <svg style="width:15px;height:15px;fill:currentColor;flex-shrink:0" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          WhatsApp Us
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ CONTACT ══ -->
-<section id="contact" aria-labelledby="contact-h2">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <div class="eyebrow" style="color:var(--gold)">Contact</div>
-        <h2 id="contact-h2" class="section-title">Get in Touch With Our Team</h2>
-        <p>We are based in Tudor, Mombasa. You can reach us by phone, WhatsApp, or email during office hours. We aim to respond to all enquiries within one working day.</p>
-        <div class="c-items">
-          <div class="c-item">
-            <div class="c-ico" aria-hidden="true">📞</div>
-            <div>
-              <div class="c-label">Phone</div>
-              <div class="c-val"><a href="tel:+254117000666">+254 117 000 666</a></div>
-            </div>
-          </div>
-          <div class="c-item">
-            <div class="c-ico" aria-hidden="true">💬</div>
-            <div>
-              <div class="c-label">WhatsApp</div>
-              <div class="c-val"><a href="https://wa.me/254117721700" target="_blank" rel="noopener noreferrer">+254 117 721 700</a></div>
-            </div>
-          </div>
-          <div class="c-item">
-            <div class="c-ico" aria-hidden="true">✉️</div>
-            <div>
-              <div class="c-label">Email</div>
-              <div class="c-val"><a id="email-main" href="#">info&#64;azuriteproperties&#46;co&#46;ke</a></div>
-            </div>
-          </div>
-          <div class="c-item">
-            <div class="c-ico" aria-hidden="true">📧</div>
-            <div>
-              <div class="c-label">Sales &amp; Rentals</div>
-              <div class="c-val"><a id="email-sales" href="#">sales&#64;azuriteproperties&#46;co&#46;ke</a></div>
-            </div>
-          </div>
-          <div class="c-item">
-            <div class="c-ico" aria-hidden="true">📍</div>
-            <div>
-              <div class="c-label">Office</div>
-              <div class="c-val">16th Floor, Moonlight Luxury Apartment,<br>Msaada Avenue, Tudor, Mombasa, Kenya</div>
-            </div>
-          </div>
-          <div class="c-item">
-            <div class="c-ico" aria-hidden="true">🕐</div>
-            <div>
-              <div class="c-label">Office Hours</div>
-              <div class="c-val">Mon–Fri: 8:00am–5:00pm · Sat: 9:00am–3:00pm</div>
-            </div>
-          </div>
-        </div>
-        <a href="https://wa.me/254117721700?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20real%20estate%20services." class="wa-big" target="_blank" rel="noopener noreferrer" aria-label="Chat with Azurite Properties on WhatsApp">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Chat on WhatsApp
-        </a>
-        <div class="socials" aria-label="Social media links">
-          <a href="https://facebook.com/azuriteproperties" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Azurite Properties on Facebook">f</a>
-          <a href="https://instagram.com/azuriteproperties" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Azurite Properties on Instagram">ig</a>
-          <a href="https://tiktok.com/@azurite.property" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Azurite Properties on TikTok">tt</a>
-          <a href="https://x.com/Azurite_Ltd" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Azurite Properties on X / Twitter">𝕏</a>
-        </div>
-      </div>
-
-      <!-- Contact form — using mailto fallback. For full form submission, replace action with Formspree endpoint:
-           1. Sign up at formspree.io (free for up to 50 submissions/month)
-           2. Create a form and copy your endpoint e.g. https://formspree.io/f/yourcode
-           3. Replace the action attribute below with that URL and change method to "POST"
-      -->
-      <div class="c-form">
-        <h3>Send Us a Message</h3>
-        <form id="contact-form" action="mailto:info@azuriteproperties.co.ke" method="GET" enctype="text/plain" novalidate>
-          <div class="f-row">
-            <div class="f-group">
-              <label for="fname">First Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="fname" name="First Name" placeholder="e.g. James" required autocomplete="given-name">
-            </div>
-            <div class="f-group">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="Last Name" placeholder="e.g. Mwangi" autocomplete="family-name">
-            </div>
-          </div>
-          <div class="f-row">
-            <div class="f-group">
-              <label for="femail">Email Address <span aria-hidden="true">*</span></label>
-              <input type="email" id="femail" name="Email" placeholder="you@example.com" required autocomplete="email">
-            </div>
-            <div class="f-group">
-              <label for="fphone">Phone / WhatsApp</label>
-              <input type="tel" id="fphone" name="Phone" placeholder="+254 7XX XXX XXX" autocomplete="tel">
-            </div>
-          </div>
-          <div class="f-group">
-            <label for="fservice">I Am Interested In</label>
-            <select id="fservice" name="Service">
-              <option value="">Select an option…</option>
-              <option>Property Management</option>
-              <option>Buying a Property</option>
-              <option>Renting a Property</option>
-              <option>Listing My Property for Sale</option>
-              <option>Listing My Property for Rent</option>
-              <option>Investment Enquiry</option>
-              <option>Off-Plan Opportunity</option>
-              <option>Developer / Marketing Partnership</option>
-              <option>General Enquiry</option>
-            </select>
-          </div>
-          <div class="f-row">
-            <div class="f-group">
-              <label for="floc">Preferred Location</label>
-              <select id="floc" name="Location">
-                <option value="">Any location…</option>
-                <option>Nyali / Bamburi</option>
-                <option>Kizingo / Mombasa Island</option>
-                <option>Tudor / Ganjoni</option>
-                <option>Shanzu / Mtwapa</option>
-                <option>Diani Beach</option>
-                <option>Vipingo / Kilifi</option>
-                <option>Likoni / South Coast</option>
-                <option>Watamu</option>
-                <option>Open to suggestions</option>
-              </select>
-            </div>
-            <div class="f-group">
-              <label for="fbudget">Budget Range</label>
-              <select id="fbudget" name="Budget">
-                <option value="">Select range…</option>
-                <option>Under KES 5M</option>
-                <option>KES 5M – 10M</option>
-                <option>KES 10M – 20M</option>
-                <option>KES 20M – 50M</option>
-                <option>Over KES 50M</option>
-                <option>Rental enquiry</option>
-              </select>
-            </div>
-          </div>
-          <div class="f-group">
-            <label for="fmsg">Message <span aria-hidden="true">*</span></label>
-            <textarea id="fmsg" name="Message" placeholder="Tell us about your property needs or questions…" required></textarea>
-          </div>
-          <p class="f-note">We respond to all enquiries within one working day. Alternatively, WhatsApp us directly for a faster response.</p>
-          <button type="submit" class="f-submit" id="fsubmit">Send Message</button>
-        </form>
-      </div>
+    <div class="cta-bar">
+      <div><strong>Looking for something not listed here?</strong><p>We maintain additional listings not published online. Tell us your requirements and we will respond within one working day.</p></div>
+      <a href="../#contact" class="btn btn-gold">Send Your Requirements</a>
     </div>
   </div>
 </section>
 </main>
 
-<!-- ══ FOOTER ══ -->
-<footer role="contentinfo">
+<footer>
   <div class="container">
     <div class="footer-grid">
       <div class="ft-brand">
-        <div class="logo" aria-label="Azurite Properties Ltd">
-          <img src="logo.jpeg" alt="Azurite Properties Ltd" style="height:80px;width:auto;display:block;object-fit:contain;margin-bottom:.5rem;">
-        </div>
-        <p>Real estate services across Mombasa and the Kenya Coast — property management, sales, lettings, and developer support.</p>
-        <p style="margin-top:.6rem;font-size:.72rem;color:rgba(255,255,255,.22)">
-          <a id="email-footer" href="#" style="color:rgba(255,255,255,.3)">info&#64;azuriteproperties&#46;co&#46;ke</a><br>
-          <a href="tel:+254117000666" style="color:rgba(255,255,255,.3)">+254 117 000 666</a>
-        </p>
-        <div style="display:flex;gap:.5rem;margin-top:1rem">
-          <a href="https://facebook.com/azuriteproperties" target="_blank" rel="noopener noreferrer" style="width:30px;height:30px;border:1px solid rgba(184,146,46,.2);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:rgba(255,255,255,.35);transition:all .25s" aria-label="Facebook">f</a>
-          <a href="https://instagram.com/azuriteproperties" target="_blank" rel="noopener noreferrer" style="width:30px;height:30px;border:1px solid rgba(184,146,46,.2);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:rgba(255,255,255,.35);transition:all .25s" aria-label="Instagram">ig</a>
-          <a href="https://tiktok.com/@azurite.property" target="_blank" rel="noopener noreferrer" style="width:30px;height:30px;border:1px solid rgba(184,146,46,.2);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:rgba(255,255,255,.35);transition:all .25s" aria-label="TikTok">tt</a>
-          <a href="https://x.com/Azurite_Ltd" target="_blank" rel="noopener noreferrer" style="width:30px;height:30px;border:1px solid rgba(184,146,46,.2);display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:rgba(255,255,255,.35);transition:all .25s" aria-label="X / Twitter">𝕏</a>
-        </div>
+        <a href="../"><img src="../logo.jpeg" alt="Azurite Properties Ltd" style="height:65px;width:auto;margin-bottom:.75rem"></a>
+        <p>Real estate services across Mombasa and the Kenya Coast.</p>
+        <p style="margin-top:.6rem;font-size:.72rem;color:rgba(255,255,255,.22)"><a href="mailto:info@azuriteproperties.co.ke" style="color:rgba(255,255,255,.3)">info@azuriteproperties.co.ke</a><br><a href="tel:+254117000666" style="color:rgba(255,255,255,.3)">+254 117 000 666</a></p>
       </div>
-      <div class="ft-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#management">Property Management</a></li>
-          <li><a href="#services">Property Sales</a></li>
-          <li><a href="#services">Lettings</a></li>
-          <li><a href="#services">Real Estate Marketing</a></li>
-          <li><a href="#developer">Developer Support</a></li>
-        </ul>
-      </div>
-      <div class="ft-col">
-        <h4>Locations</h4>
-        <ul>
-          <li><a href="#areas">Nyali &amp; Bamburi</a></li>
-          <li><a href="#areas">Kizingo &amp; Tudor</a></li>
-          <li><a href="#areas">Diani Beach</a></li>
-          <li><a href="#areas">Vipingo Ridge</a></li>
-          <li><a href="#areas">Kilifi &amp; Watamu</a></li>
-        </ul>
-      </div>
-      <div class="ft-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#properties">Properties</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Disclaimer</a></li>
-        </ul>
-      </div>
+      <div class="ft-col"><h4>Properties</h4><ul>
+        <li><a href="../properties/">All Properties</a></li>
+        <li><a href="../properties/off-plan/">Off-Plan</a></li>
+        <li><a href="../properties/for-sale/">For Sale</a></li>
+        <li><a href="../properties/for-rent/">For Rent</a></li>
+        <li><a href="../properties/investment/">Investment</a></li>
+        <li><a href="../properties/holiday-stays/">Holiday Stays</a></li>
+      </ul></div>
+      <div class="ft-col"><h4>Managed</h4><ul>
+        <li><a href="../managed-properties/">All Managed Properties</a></li>
+        <li><a href="../managed-properties/starshine-apartments/">Starshine Apartments</a></li>
+        <li><a href="../managed-properties/moonlight-luxury-residence/">Moonlight Luxury Residence</a></li>
+      </ul></div>
+      <div class="ft-col"><h4>Company</h4><ul>
+        <li><a href="../#about">About Us</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../terms.html">Terms &amp; Disclaimer</a></li>
+      </ul></div>
     </div>
     <div class="ft-bottom">
-      <p>© <span id="copy-year"></span> Azurite Properties Ltd. All rights reserved. Registered in Kenya.</p>
-      <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms &amp; Disclaimer</a></p>
+      <p>&copy; <span id="copy-year"></span> Azurite Properties Ltd. All rights reserved.</p>
+      <p><a href="../privacy-policy.html">Privacy</a> &middot; <a href="../terms.html">Terms</a></p>
     </div>
   </div>
 </footer>
 
-<!-- ══ WHATSAPP FLOAT ══ -->
-<a href="https://wa.me/254117721700?text=Hello%2C%20I%20am%20interested%20in%20your%20real%20estate%20services."
-   class="wa-float" target="_blank" rel="noopener noreferrer"
-   aria-label="Chat with Azurite Properties on WhatsApp">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+<a href="https://wa.me/254117721700?text=Hello%2C%20I%20am%20interested%20in%20your%20real%20estate%20services." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-'use strict';
-
-/* ─── Watermark fade on scroll ─── */
-var watermark = document.getElementById('hero-watermark');
-if (watermark) {
-  window.addEventListener('scroll', function() {
-    var scrolled = window.scrollY;
-    var heroH = document.getElementById('hero').offsetHeight;
-    var fadeStart = heroH * 0.15;
-    var fadeEnd = heroH * 0.55;
-    if (scrolled <= fadeStart) {
-      watermark.style.opacity = '1';
-    } else if (scrolled >= fadeEnd) {
-      watermark.style.opacity = '0';
-    } else {
-      var ratio = 1 - (scrolled - fadeStart) / (fadeEnd - fadeStart);
-      watermark.style.opacity = ratio.toString();
-    }
-  }, { passive: true });
-}
-
-/* ─── Auto-update copyright year ─── */
+<script>
 document.getElementById('copy-year').textContent = new Date().getFullYear();
-
-/* ─── Fix emails so Cloudflare cannot hide them ─── */
-(function() {
-  var e1 = 'info' + '\u0040' + 'azuriteproperties' + '\u002e' + 'co' + '\u002e' + 'ke';
-  var e2 = 'sales' + '\u0040' + 'azuriteproperties' + '\u002e' + 'co' + '\u002e' + 'ke';
-  var m = document.getElementById('email-main');
-  var s = document.getElementById('email-sales');
-  var f = document.getElementById('email-footer');
-  if (m) { m.href = 'mailto:' + e1; m.textContent = e1; }
-  if (s) { s.href = 'mailto:' + e2; s.textContent = e2; }
-  if (f) { f.href = 'mailto:' + e1; f.textContent = e1; }
-  var form = document.getElementById('contact-form');
-  if (form) form.action = 'mailto:' + e1;
-})();
-
-/* ─── Sticky nav ─── */
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', function() {
-  nav.classList.toggle('scrolled', window.scrollY > 70);
-}, { passive: true });
-
-/* ─── Mobile nav ─── */
-function openMobile() {
-  const mn = document.getElementById('mobile-nav');
-  const btn = document.querySelector('.hamburger');
-  mn.classList.add('open');
-  document.body.style.overflow = 'hidden';
-  btn.setAttribute('aria-expanded', 'true');
-  mn.querySelector('a').focus();
-}
-function closeMobile() {
-  const mn = document.getElementById('mobile-nav');
-  const btn = document.querySelector('.hamburger');
-  mn.classList.remove('open');
-  document.body.style.overflow = '';
-  btn.setAttribute('aria-expanded', 'false');
-}
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeMobile();
-});
-
-/* ─── Property filter tabs ─── */
-document.querySelectorAll('.pf').forEach(function(btn) {
-  btn.addEventListener('click', function() {
-    document.querySelectorAll('.pf').forEach(function(b) {
-      b.classList.remove('active');
-      b.removeAttribute('aria-current');
-    });
-    this.classList.add('active');
-    this.setAttribute('aria-current', 'true');
-
-    var filter = this.getAttribute('data-filter');
-    document.querySelectorAll('.prop-card').forEach(function(card) {
-      if (filter === 'all' || card.getAttribute('data-status') === filter) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
-    });
+var nav = document.getElementById('nav');
+window.addEventListener('scroll', function(){ nav.classList.toggle('scrolled', window.scrollY > 70); }, {passive:true});
+function openMobile(){ document.getElementById('mobile-nav').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeMobile(){ document.getElementById('mobile-nav').classList.remove('open'); document.body.style.overflow=''; }
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeMobile(); });
+document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var dd = btn.closest('.nav-dropdown');
+    document.querySelectorAll('.nav-dropdown').forEach(function(d){ if(d!==dd) d.classList.remove('open'); });
+    dd.classList.toggle('open');
   });
 });
-
-/* ─── Form handling ─── */
-var form = document.getElementById('contact-form');
-if (form) {
-  form.addEventListener('submit', function(e) {
-    var fname = document.getElementById('fname').value.trim();
-    var femail = document.getElementById('femail').value.trim();
-    var fmsg = document.getElementById('fmsg').value.trim();
-    var btn = document.getElementById('fsubmit');
-    if (!fname || !femail || !fmsg) {
-      e.preventDefault();
-      alert('Please fill in your name, email address, and message before sending.');
-      return;
-    }
-    btn.textContent = 'Opening email client\u2026';
-    btn.disabled = true;
-    setTimeout(function() {
-      btn.textContent = 'Send Message';
-      btn.disabled = false;
-    }, 3000);
+document.addEventListener('click', function(e){ if(!e.target.closest('.nav-dropdown')) document.querySelectorAll('.nav-dropdown').forEach(function(d){ d.classList.remove('open'); }); });
+var cards = document.querySelectorAll('.prop-card');
+var countEl = document.getElementById('count');
+document.querySelectorAll('.pf').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.pf').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    var filter = btn.getAttribute('data-filter');
+    var visible = 0;
+    cards.forEach(function(card){
+      var show = filter === 'all' || card.getAttribute('data-cat') === filter;
+      card.classList.toggle('hidden', !show);
+      if(show) visible++;
+    });
+    if(countEl) countEl.textContent = visible;
   });
-}
+});
 </script>
 </body>
 </html>
